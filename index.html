@@ -7,17 +7,16 @@
 <script src="https://kit.fontawesome.com/18ff631df8.js" crossorigin="anonymous"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="style.css">
 <title>"Oh My Food"</title>
 </head>
 	
 <body class="container">
 	
-	<header>
+<header>
 		
 <!-- Logo !-->
 	
@@ -33,10 +32,8 @@
 		<input style="text" id="localisation" placeholder="Paris, Belleville">
 	</label>
 </div>
-		
-	</header>
-	
-<!-- Elements principaux !-->
+
+<!-- Titre et exploration !-->
 	
 <form class="principal_title">
 	<h2>Réservez le menu qui vous convient</h2>
@@ -48,78 +45,109 @@
 
 	<section class="explain">
 		<h2>Fonctionnement</h2>
-		<div class="number_btn">
-			<p>1</p>
-		</div>
-			<a class="btn"><i class="fas fa-mobile-alt"></i>
-				Choissisez un restaurant
-			</a>	
-		<div class="number_btn">
-			<p>2</p>
-		</div>
-			<a class="btn"><i class="fas fa-list-ul"></i>
-				Composez votre menu
-			</a>
 			<div class="number_btn">
-				<p>3</p>
+				<p>1</p>
 			</div>
-			<a class="btn"><i class="fas fa-store"></i>
-				Dégustez au restaurant
-			</a>
+				<div class="btn">
+					<a>
+						<i class="fas fa-mobile-alt"></i>
+						Choissisez un restaurant
+					</a>
+				</div>	
+				<div class="number_btn">
+					<p>2</p>
+				</div>
+				<div class="btn">
+					<a class="btn"><i class="fas fa-list-ul"></i>
+						Composez votre menu
+					</a>
+				</div>
+				<div class="number_btn">
+					<p>3</p>
+				</div>
+				<div class="btn">
+					<a class="btn"><i class="fas fa-store"></i>
+					Dégustez au restaurant
+					</a>
+				</div>
 	</section>
+
+</header>
 	
 <main>
 	
 <!-- Restaurants !-->
 	
-<section class="section_1">
-	<div id="choice_cards">
-		<h2>Restaurants</h2>
+<article class="choice_cards">
+		
+		<h1>Restaurants</h1>
+
 			<div class="cards_choice_all">
 				<a class="card_choice" href="index_menu1.html">
-					<p class="new">Nouveau</p>
+					<div class="new">
+						<p>Nouveau</p>
+					</div>
 					<img src="images/palettedugout.jpg" alt="photo d'un plat">
-					<p>La palette du goût</p>
-					<p>Ménilmontant</p>
+						<div class="palette">
+							<h3>La palette du goût</h3>
+						</div>
+						<div class="site">
+							<p>Ménilmontant</p>
+						</div>
 						<div class="like">
 							<i class="far fa-heart"></i>
 						</div>
 				</a>
 				
 				<a class="card_choice" href="index_menu2.html">
-					<p class="new">Nouveau</p>
+					<div class="new">
+						<p>Nouveau</p>
+					</div>
 					<img src="images/noteenchantee.jpg" alt="photo d'un plat">
-					<p>La note enchantée</p>
-					<p>Charonne</p>
+					<div class="note_enchantee">
+						<h3>La note enchantée</h3>
+					</div>
+					<div class="site">
+						<p>Charonne</p>
+					</div>
 						<div class="like">
 							<i class="far fa-heart"></i>
 						</div>
 				</a>
 				<a class="card_choice" href="index_menu3.html">
 					<img src="images/alafrancaise.jpg" alt="photo d'un plat">
-					<p>A la française</p>
-					<p>Cité Rouge</p>
+					<div class="a_lafrancaise">
+						<h3>A la française</h3>
+					</div>
+					<div class="site">
+						<p>Cité Rouge</p>
+					</div>
 						<div class="like">
 							<i class="far fa-heart"></i>
 						</div>
 				</a>   
 				<a class="card_choice" href="index_menu4.html">
 					<img src="images/delicedessens.jpg" alt="photo d'un plat">
-					<p>Le délice des sens</p>
-					<p>Folie-Méricourt</p>	
+					<div class="delicesens">
+						<h3>Le délice des sens</h3>
+					</div>
+					<div class="place">
+						<p>Folie-Méricourt</p>
+					</div>	
 						<div class="like">
 							<i class="far fa-heart"></i>
 						</div>
 				</a>
 			</div>
-	</div>
-</section>
-			</main>
+</article>
+			
+</main>
+
 <!-- Footer !-->
 		
 <footer>
 	<div class="footer">
-		<h2>ohmyfood</h2>
+		<h3>ohmyfood</h3>
 			<div class="propose">
 				<ul>
 					<li>
