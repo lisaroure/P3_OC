@@ -34,6 +34,16 @@ body {
     height: 63px;
 }
 
+.position i {
+    margin: auto;
+}
+
+.position label {
+    position: absolute;
+	 top: -9999px;
+ 	 left: -9999px;
+}
+
 .position input {
     font-family: roboto, sans-serif;
     font-size: 1.5rem;
@@ -43,8 +53,11 @@ body {
     margin: 14px 0 12px 66px;
 }
 
-.position label {
-    position: absolute;
-	 top: -9999px;
- 	 left: -9999px;
+/* Titre et exploration */
+
+.principal_title {
+    font-family: roboto, sans-serif;
+    display: flex;
+    justify-content: center;
 }
+
