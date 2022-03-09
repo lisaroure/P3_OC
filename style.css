@@ -17,8 +17,11 @@ body {
 /* Header */ /* Logo */
 
 #logo {
+    display: block;
+    margin: auto;
     width: 50%;
     height: auto;
+    padding: 10px 0px 15px 0px;
 }
 
 /* Bannière lieu */
@@ -34,4 +37,10 @@ body {
 .position input {
     font-family: roboto, sans-serif;
     margin: 20px 0 0 15px;
+}
+
+.position label {
+    position: absolute;
+	 top: -9999px;
+ 	 left: -9999px;
 }
