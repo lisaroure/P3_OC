@@ -99,13 +99,10 @@ body {
     border-radius: 3rem;
 }
 
-.all_btn {
+.btn {
+    display: flex;
+    flex-wrap: wrap;
     background-color: #F2F2F2;
     border-radius: 1rem;
     box-shadow: 2px 7px 15px -13px grey;
-}
-
-.choose .compose .deguste {
-    display: flex;
-    flex-wrap: wrap;
 }
