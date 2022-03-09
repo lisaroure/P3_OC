@@ -58,7 +58,10 @@ body {
 .principal_title {
     font-family: roboto, sans-serif;
     text-align: center;
-    background-color: #F5F5F5;
+    font-size: 1.3rem;
+    background-color: #fff1f1;
+    margin: -21px 0 0 0;
+    padding: 35px 0 83px 0;
 }
 
 .explore {
