@@ -63,9 +63,12 @@ body {
 
 .explore {
     font-family: roboto, sans-serif;
-    text-decoration: white;
+    color: white;
     font-weight: bold;
+    font-size: 1.2rem;
     background: linear-gradient(#FF79DA, #9356DC);
-    border-radius: 1rem;
-    box-shadow: 10px;
+    border-radius: 3rem;
+    box-shadow: 2px 7px 15px -6px grey;
+    padding: 21px 48px 21px 48px;
+    border: none;
 }
