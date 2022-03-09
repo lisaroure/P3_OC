@@ -87,23 +87,42 @@ body {
 
 .explain h2 {
     font-weight: bold;
-
 }
 
 .number_btn {
     display: flex;
     justify-content: center;
-    width: 32px;
-    height: 32px;
+    width: 55px;
+    height: 55px;
     color: #ffffff;
     background-color: #9356DC;
     border-radius: 3rem;
+    margin: 0 0 0 -13px;
+}
+
+.number_btn p {
+    font-weight: bold;
+    margin-left: 15px;
 }
 
 .btn {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     background-color: #F2F2F2;
-    border-radius: 1rem;
+    border-radius: 2rem;
     box-shadow: 2px 7px 15px -13px grey;
+    width: 33%;
+    height: 100px;
+    margin: 14px;
+}
+
+.btn i {
+    color: #888888;
+    margin: 35px;
+}
+
+.btn a {
+    font-weight: bold;
+    font-size: 1.2rem;
 }
