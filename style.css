@@ -50,7 +50,7 @@ body {
     font-weight: bold;
     border: none;
     background-color: #F2F2F2;
-    margin: 14px 0 10px 85px;
+    margin: 15px -52px 12px 105px;
 }
 
 /* Titre et exploration */
@@ -60,3 +60,11 @@ body {
     text-align: center;
 }
 
+.explore {
+    font-family: roboto, sans-serif;
+    text-decoration: white;
+    font-weight: bold;
+    background: linear-gradient(#FF79DA, #9356DC);
+    border-radius: 1rem;
+    box-shadow: 10px;
+}
