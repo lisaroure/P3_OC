@@ -1,0 +1,37 @@
+/* Tout le contenu de la page */
+
+* {
+    box-sizing: border-box;
+}
+
+/* Body */
+
+body {
+    padding: 20px; 
+}
+
+.container {
+    margin: auto;
+    max-width: 2500px;
+}
+
+/* Header */ /* Logo */
+
+#logo {
+    width: 50%;
+    height: auto;
+}
+
+/* Bannière lieu */
+
+.position {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-top: 2px;
+    background-color: #F2F2F2;
+}
+
+.position input {
+    font-family: roboto, sans-serif;
+}
