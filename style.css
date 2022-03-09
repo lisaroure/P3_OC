@@ -80,7 +80,8 @@ body {
 
 .explain {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     font-family: roboto, sans-serif;
 }
 
