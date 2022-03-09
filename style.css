@@ -35,7 +35,7 @@ body {
 }
 
 .position i {
-    margin: auto;
+    margin: 27px -84px 0 38px;
 }
 
 .position label {
@@ -50,14 +50,13 @@ body {
     font-weight: bold;
     border: none;
     background-color: #F2F2F2;
-    margin: 14px 0 12px 66px;
+    margin: 14px 0 10px 85px;
 }
 
 /* Titre et exploration */
 
 .principal_title {
     font-family: roboto, sans-serif;
-    display: flex;
-    justify-content: center;
+    text-align: center;
 }
 
