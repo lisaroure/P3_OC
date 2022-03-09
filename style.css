@@ -12,7 +12,6 @@ body {
 
 .container {
     margin: auto;
-    max-width: 2500px;
 }
 
 /* Header */ /* Logo */
@@ -26,10 +25,10 @@ body {
 
 .position {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    border-top: 2px;
+    box-shadow: inset 0px 11px 13px -12px #888888;
     background-color: #F2F2F2;
+    height: 63px;
 }
 
 .position input {
