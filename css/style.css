@@ -127,7 +127,11 @@ body {
 
 /* Menu Palette du goût */
 
+<<<<<<< HEAD
 #logo_menu {
+=======
+#id_menu {
+>>>>>>> ab3702181b87ac97115bb1e4559e6337ec3ee053
     display: flex;
     justify-content: center;
 }
