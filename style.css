@@ -15,7 +15,7 @@ body {
     font-weight: bold;
 }
 
-/* Header */ /* Logo */
+/* Header */ /* Logo */ 
 
 #logo {
     display: block;
@@ -122,4 +122,12 @@ body {
 
 .btn a {
     font-size: 1.2rem;
+}
+
+
+/* Menu Palette du goût */
+
+header {
+    display: flex;
+    justify-content: center;
 }
