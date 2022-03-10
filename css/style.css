@@ -1,4 +1,4 @@
-/* Tout le contenu de la page */
+/* Tout le contenu des pages */
 
 * {
     box-sizing: border-box;
@@ -15,7 +15,7 @@ body {
     font-weight: bold;
 }
 
-/* Header */ /* Logo */ 
+/* Header */ /* Logos */ 
 
 #logo {
     display: block;
@@ -25,7 +25,12 @@ body {
     padding: 10px 0px 15px 0px;
 }
 
-/* Bannière lieu */
+#logo_menu {
+	display: flex;
+	justify-content: center;
+}
+
+/* Bannière lieu page accueil */
 
 .position {
     display: flex;
