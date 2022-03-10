@@ -123,12 +123,3 @@ body {
 .btn a {
     font-size: 1.2rem;
 }
-
-
-/* Menu Palette du goût */ /* Header */
-
-
-#logo_menu {
-    display: flex;
-    justify-content: center;
-}
