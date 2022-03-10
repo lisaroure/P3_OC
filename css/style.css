@@ -1,0 +1,133 @@
+/* Tout le contenu de la page */
+
+* {
+    box-sizing: border-box;
+}
+
+/* Body */
+
+body {
+    padding: 20px; 
+}
+
+.container {
+    margin: auto;
+    font-weight: bold;
+}
+
+/* Header */ /* Logo */ 
+
+#logo {
+    display: block;
+    margin: auto;
+    width: 13%;
+    height: auto;
+    padding: 10px 0px 15px 0px;
+}
+
+/* Bannière lieu */
+
+.position {
+    display: flex;
+    justify-content: center;
+    box-shadow: inset 0px 11px 13px -12px #888888;
+    background-color: #F2F2F2;
+    height: 85px;
+}
+
+.position label {
+    position: absolute;
+	 top: -9999px;
+ 	 left: -9999px;
+}
+
+.position input {
+    font-family: roboto, sans-serif;
+    font-size: 1.5rem;
+    border: none;
+    background-color: #F2F2F2;
+    margin: 15px 0 32px 103px;
+}
+
+.fas.fa-map-marker-alt {
+    margin: 26px -84px 0 38px;
+}
+
+/* Titre et exploration */
+
+.principal_title {
+    font-family: roboto, sans-serif;
+    text-align: center;
+    font-size: 1.3rem;
+    background-color: #F7F7F7;
+    margin: -21px 0 0 0;
+    padding: 35px 0 83px 0;
+}
+
+.explore {
+    font-family: roboto, sans-serif;
+    color: white;
+    font-size: 1.2rem;
+    background: linear-gradient(#FF79DA, #9356DC);
+    border-radius: 3rem;
+    box-shadow: 2px 7px 15px -6px grey;
+    padding: 21px 48px 21px 48px;
+    margin-top: 20px;
+    border: none;
+}
+
+/* Fonctionnement */
+
+.explain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: roboto, sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 30px;
+}
+
+.number_btn {
+    display: flex;
+    justify-content: center;
+    width: 55px;
+    height: 55px;
+    color: #ffffff;
+    background-color: #9356DC;
+    border-radius: 3rem;
+    margin: 0 0 0 -13px;
+}
+
+.number_btn p {
+    font-weight: bold;
+}
+
+.btn {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #F2F2F2;
+    border-radius: 2rem;
+    box-shadow: 2px 7px 15px -13px grey;
+    width: 33%;
+    height: 100px;
+    margin: 14px;
+}
+
+.btn i {
+    color: #888888;
+    margin: 0 60px 0 45px;
+}
+
+.btn a {
+    font-size: 1.2rem;
+}
+
+
+/* Menu Palette du goût */
+
+header {
+    display: flex;
+    justify-content: center;
+}
