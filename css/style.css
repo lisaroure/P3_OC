@@ -154,7 +154,14 @@ nav a {
     color: black;
 }
 
+.card_choice_all {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .card_choice {
+    display: flex;
+    flex-direction: column;
     border-radius: 1rem;
     width: 71%;
     height: 525px;
