@@ -128,3 +128,29 @@ body {
 .btn a {
     font-size: 1.2rem;
 }
+/* Main */ /* Présentation des restaurants */
+
+.choice_cards {
+    display: flex;
+    flex-direction: column;
+    background-color: #F2F2F2;
+}
+
+.card_choice {
+    border-radius: 2rem;
+    width: 100px;
+    height: auto;
+}
+
+.card_choice img {
+    width: 100px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.new {
+    background-color: #99E2D0;
+    color: rgb(0, 216, 180);
+    padding: 1.1rem;
+    position: absolute;
+}
