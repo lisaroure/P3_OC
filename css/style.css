@@ -130,29 +130,38 @@ body {
 }
 /* Main */ /* Présentation des restaurants */
 
-nav .card_choice_all {
-    font-family: roboto, sans-serif;
+article {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    font-family: roboto, sans-serif;
     background-color: #F2F2F2
 }
 
+nav {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .card_choice {
-    border-radius: 2rem;
-    width: 100px;
-    height: auto;
+    border-radius: 1rem;
+    width: 71%;
+    height: 525px;
+    background-color: #ffffff;
+    margin: 34px;
 }
 
 .card_choice img {
-    width: 22%;
-    height: 276px;
+    width: 100%;
+    height: 395px;
     object-fit: cover;
+    border-radius: 1rem 1rem 0 0;
 }
 
 .new {
     background-color: #99E2D0;
-    color: rgb(0, 216, 180);
-    padding: 1.1rem;
+    color: rgb(0, 143, 79);
+    padding: 0.5rem;
     position: absolute;
+    left: 1640px;
 }
+
