@@ -209,6 +209,15 @@ nav a {
     color: #ffffff;
 }
 
+.links {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.links ul {
+    display: flex;
+}
+
 .links li {
     list-style-type: none;
 }
