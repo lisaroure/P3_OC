@@ -150,7 +150,7 @@ nav a {
     color: black;
 }
 
-.cards_choice-1 {
+.all_cards {
     display: flex;
     flex-wrap: wrap;
 }
