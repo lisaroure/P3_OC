@@ -209,10 +209,12 @@ nav a {
     color: #ffffff;
 }
 
-.links
-{
-    display: flex;
-    flex-wrap: wrap;
+.links ul li a {
+    font-family: roboto, sans-serif;
     text-decoration: none;
+    color: #ffffff;
+}
+
+.links i {
     color: #ffffff;
 }
