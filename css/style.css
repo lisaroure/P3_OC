@@ -130,33 +130,31 @@ body {
 /* Main */ /* Présentation des restaurants */
 
 article {
+   display: flex;
+}
+
+#restaurants {
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 80%;
     font-family: roboto, sans-serif;
     font-size: 1.5rem;
     background-color: #F2F2F2;
     margin: 81px -20px 0px -19px;
 }
 
-article h1 {
+nav h1 {
     margin: -51px 600px 63px 0;
     font-size: 2rem;
 }
 
-#restaurants {
-  display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 80%;
-    margin: 123px 0 0 0;
-}
-
-.card_all_choice a {
+nav a {
     text-decoration: none;
     color: black;
 }
 
 .card_choice {
-    font-family: roboto, sans-serif;
     border-radius: 1rem;
     width: 71%;
     height: 525px;
