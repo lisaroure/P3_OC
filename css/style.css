@@ -139,7 +139,8 @@ article {
 }
 
 article h1 {
-    margin: -42px 0 0 0;
+    margin: 56px 430px 45px 0;
+    font-size: 2rem;
 }
 
 nav {
@@ -160,9 +161,7 @@ nav a {
     border-radius: 1rem;
     width: 71%;
     height: 525px;
-    background-color: #ffffff;
-    margin: 48px 140px 36px 0x;
-
+    background-color: #ffffff;  
 }
 
 .card_choice h3 {
@@ -182,7 +181,7 @@ nav a {
     color: rgb(0, 143, 79);
     padding: 0.5rem;
     position: absolute;
-    left: 1474px;
+    left: 1500px;
 }
 
 .site {
@@ -194,6 +193,6 @@ nav a {
     font-size: 37px;
     color: #888888;
     position: absolute;
-    left: 1515px;
-    margin: -42px 0 0 -22px;
+    left: 1555px;
+    margin: -50px 0 0 0;
 }
