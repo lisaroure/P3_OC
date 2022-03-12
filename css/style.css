@@ -130,16 +130,12 @@ body {
 }
 /* Main */ /* Présentation des restaurants */
 
-.choice_cards {
-    display: flex;
-    flex-direction: column;
-    background-color: #F2F2F2;
-}
-
 .card_choice_all {
+    font-family: roboto, sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: #F2F2F2
 }
 
 .card_choice {
