@@ -130,7 +130,7 @@ body {
 }
 /* Main */ /* Présentation des restaurants */
 
-.card_choice_all {
+nav .card_choice_all {
     font-family: roboto, sans-serif;
     display: flex;
     flex-direction: column;
