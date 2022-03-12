@@ -136,6 +136,12 @@ body {
     background-color: #F2F2F2;
 }
 
+.card_choice_all {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .card_choice {
     border-radius: 2rem;
     width: 100px;
@@ -143,8 +149,8 @@ body {
 }
 
 .card_choice img {
-    width: 100px;
-    height: 100%;
+    width: 22%;
+    height: 276px;
     object-fit: cover;
 }
 
