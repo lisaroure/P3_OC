@@ -172,14 +172,6 @@ nav a {
     border-radius: 1rem 1rem 0 0;
 }
 
-.card_choice i {
-    font-size: 37px;
-    color: #888888;
-    position: absolute;
-    left: 1515px;
-    top: 1607px;
-}
-
 .new {
     background-color: #99E2D0;
     color: rgb(0, 143, 79);
@@ -193,3 +185,10 @@ nav a {
     font-size: 1.2rem;
 }
 
+.far.fa-heart {
+    font-size: 37px;
+    color: #888888;
+    position: absolute;
+    left: 1515px;
+    top: 1607px;
+}
