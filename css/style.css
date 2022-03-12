@@ -204,9 +204,13 @@ nav a {
     background-color: #383838;
 }
 
-.footer h3 {
+.logo-footer {
     font-family: shrikhand, sans-serif;
     color: #ffffff;
+}
+
+.links li {
+    list-style-type: none;
 }
 
 .links ul li a {
