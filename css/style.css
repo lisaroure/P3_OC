@@ -211,7 +211,6 @@ nav a {
 
 .links {
     display: flex;
-    flex-wrap: wrap;
 }
 
 .links li {
