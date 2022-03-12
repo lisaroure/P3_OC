@@ -160,7 +160,7 @@ nav a {
 
 }
 
-.card_choice h3 p {
+.card_choice h3, p {
     margin: 16px 0 0 26px;
     font-size: 1.5rem;
 }
