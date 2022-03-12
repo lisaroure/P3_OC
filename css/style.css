@@ -145,6 +145,11 @@ nav {
     margin: 60px 0 0 45px;
 }
 
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
 .card_choice {
     font-family: roboto, sans-serif;
     border-radius: 1rem;
@@ -156,7 +161,8 @@ nav {
 }
 
 .card_choice h3 p {
-    margin: 0 0 0 0;
+    margin: 16px 0 0 26px;
+    font-size: 1.5rem;
 }
 
 .card_choice img {
@@ -171,6 +177,6 @@ nav {
     color: rgb(0, 143, 79);
     padding: 0.5rem;
     position: absolute;
-    left: 1640px;
+    left: 1476px;
 }
 
