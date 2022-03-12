@@ -130,22 +130,18 @@ body {
 /* Main */ /* Présentation des restaurants */
 
 article {
-   display: flex;   
-   width: 100%;
-    font-family: roboto, sans-serif;
-    font-size: 1.5rem;
+    font-family: roboto;
+    display: flex;   
     background-color: #F2F2F2;
 }
 
 #restaurants {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
     margin: 81px -20px 0px -19px;
 }
 
 nav h1 {
-    margin: -51px 600px 63px 0;
+    margin: -51px 0 75px 50px;
     font-size: 2rem;
 }
 
@@ -163,10 +159,10 @@ nav a {
     display: flex;
     flex-direction: column;
     border-radius: 1rem;
-    width: 71%;
-    height: 525px;
+    width: 45em;
+    height: 363px;
     background-color: #ffffff;  
-    margin: 0 0 45px 460px;
+    margin: 13px 20px 39px 45px;
 }
 
 .card_choice h3 {
