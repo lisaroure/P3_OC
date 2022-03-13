@@ -222,6 +222,10 @@ section a {
     margin: 18px 0 3px 30px;
 }
 
+.logo-footer:hover {
+    border: none;
+}
+
 .links li {
     display: flex;
     justify-content: center;
