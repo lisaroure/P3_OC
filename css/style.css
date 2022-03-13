@@ -214,25 +214,21 @@ section a {
 
 .logo-footer {
     font-family: shrikhand, sans-serif;
+    font-weight: normal;
     color: #ffffff;
-}
-
-.links {
-    display: flex;
+    margin: 18px 0 3px 30px;
 }
 
 .links li {
+    display: flex;
+    justify-content: center;
     list-style-type: none;
+    margin: 8px;
 }
 
 .links ul li a {
     text-decoration: none;
     color: #ffffff;
-}
-
-.links ul i {
-    display: flex;
-    flex-wrap: wrap;
 }
 
 .links i {
