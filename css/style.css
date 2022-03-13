@@ -83,12 +83,21 @@ body {
 
 /* Fonctionnement */
 
+.explain {
+    font-family: roboto, sans-serif;
+    font-weight: bold;  
+    font-size: 1.2rem;
+}
+
+.explain h2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 .card_functioning {
     display: flex;
     flex-direction: row;
-    font-family: roboto, sans-serif;
-    font-weight: bold;
-    font-size: 1.2rem;
     margin-top: 30px;
 }
 
