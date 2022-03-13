@@ -140,9 +140,9 @@ body {
     background-color: #F2F2F2;
 }
 
-section h2 {
-    margin: -51px 0 75px 50px;
-    font-size: 2rem;
+.title {
+   display: flex;
+   align-items: center;
 }
 
 section a {
