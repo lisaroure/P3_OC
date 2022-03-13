@@ -3,19 +3,13 @@
 * {
     box-sizing: border-box;
     font-family: roboto, sans-serif;
-    margin: 0;
-    padding: 0;
+    font-weight: bold;
 }
 
 /* Body */
 
-body {
-    padding: 20px; 
-}
-
 .container {
     margin: auto;
-    font-weight: bold;
 }
 
 /* Header */ /* Logos */ 
@@ -71,7 +65,7 @@ body {
 }
 
 .principal_title p {
-    margin-top: 20px;
+    margin: 20px 0 20px 0;
 }
 
 .explore {
@@ -128,7 +122,7 @@ body {
     background-color: #F2F2F2;
     border-radius: 2rem;
     box-shadow: 2px 7px 15px -13px grey;
-    width: 26%;
+    width: 23%;
     height: 100px;
 }
 
