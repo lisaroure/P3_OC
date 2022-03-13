@@ -222,9 +222,7 @@ section a {
     margin: 18px 0 3px 30px;
 }
 
-.logo-footer:hover {
-    border: none;
-}
+
 
 .links li {
     display: flex;
@@ -240,4 +238,5 @@ section a {
 
 .links i {
     color: #ffffff;
+    margin: 0 8px 0 0;
 }
