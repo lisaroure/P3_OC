@@ -140,7 +140,7 @@ body {
     background-color: #F2F2F2;
 }
 
-section h1 {
+section h2 {
     margin: -51px 0 75px 50px;
     font-size: 2rem;
 }
@@ -152,8 +152,8 @@ section a {
 
 .all_cards {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+   flex-wrap: wrap;
+   margin: 93px 0 40px 0;
 }
 
 .card_choice {
