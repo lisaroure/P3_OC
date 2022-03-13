@@ -114,6 +114,10 @@ body {
     margin: 0 0 0 -13px;
 }
 
+.number_btn p {
+    margin: 0;
+}
+
 .btn {
     display: flex;
     flex-wrap: wrap;
