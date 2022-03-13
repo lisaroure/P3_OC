@@ -177,12 +177,12 @@ section a {
     border-radius: 1rem 1rem 0 0;
 }
 
-.heart {
+.card_choice .heart {
     font-size: 37px;
     color: #888888;
     position: absolute;
-    left: 1555px;
-    margin: -50px 0 0 0;
+    right: 5%;
+    bottom: 5%;
 }
 
 .new {
