@@ -177,13 +177,14 @@ section a {
     border-radius: 1rem 1rem 0 0;
 }
 
-.card_choice i {
+.far.fa-heart {
     font-size: 37px;
     color: #888888;
     position: absolute;
     left: 1555px;
     margin: -50px 0 0 0;
 }
+
 .new {
     background-color: #99E2D0;
     color: rgb(0, 143, 79);
