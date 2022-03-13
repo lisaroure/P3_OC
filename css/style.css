@@ -163,6 +163,8 @@ section a {
     height: 363px;
     background-color: #ffffff;  
     margin: 13px 20px 39px 45px;
+    position: relative;
+    z-index: 1;
 }
 
 .card_choice h3 {
@@ -177,10 +179,11 @@ section a {
     border-radius: 1rem 1rem 0 0;
 }
 
-.card_choice .heart {
+.heart {
     font-size: 37px;
     color: #888888;
     position: absolute;
+    z-index: 2;
     right: 5%;
     bottom: 5%;
 }
@@ -190,7 +193,8 @@ section a {
     color: rgb(0, 143, 79);
     padding: 0.5rem;
     position: absolute;
-    left: 1500px;
+    left:5%;
+    z-index: 2;
 }
 
 .site {
