@@ -140,7 +140,11 @@ body {
     background-color: #F2F2F2;
 }
 
-#restaurants a {
+section h2 {
+    text-align: center;
+}
+
+section a {
     text-decoration: none;
     color: black;
 }
@@ -149,11 +153,6 @@ body {
     display: flex;
    flex-wrap: wrap;
    margin: 93px 0 40px 0;
-}
-
-.title {
-   display: flex;
-   align-items: center;
 }
 
 .card_choice {
