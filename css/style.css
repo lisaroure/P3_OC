@@ -135,29 +135,25 @@ body {
 
 /* Main */ /* Présentation des restaurants */
 
-article {
+#restaurants {
     display: flex;   
     background-color: #F2F2F2;
 }
 
-#restaurants {
-    display: flex;
-    margin: 81px -20px 0px -19px;
-}
-
-nav h1 {
+section h1 {
     margin: -51px 0 75px 50px;
     font-size: 2rem;
 }
 
-nav a {
+section a {
     text-decoration: none;
     color: black;
 }
 
 .all_cards {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .card_choice {
