@@ -2,6 +2,9 @@
 
 * {
     box-sizing: border-box;
+    font-family: roboto, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 /* Body */
@@ -47,7 +50,6 @@ body {
 }
 
 .position input {
-    font-family: roboto, sans-serif;
     font-size: 1.5rem;
     border: none;
     background-color: #F2F2F2;
@@ -61,7 +63,6 @@ body {
 /* Titre et exploration */
 
 .principal_title {
-    font-family: roboto, sans-serif;
     text-align: center;
     font-size: 1.3rem;
     background-color: #F7F7F7;
@@ -70,7 +71,6 @@ body {
 }
 
 .explore {
-    font-family: roboto, sans-serif;
     color: white;
     font-size: 1.2rem;
     background: linear-gradient(#FF79DA, #9356DC);
@@ -84,7 +84,6 @@ body {
 /* Fonctionnement */
 
 .explain {
-    font-family: roboto, sans-serif;
     font-weight: bold;  
     font-size: 1.2rem;
     padding: 16px 0 90px 0;
@@ -115,7 +114,7 @@ body {
 }
 
 .number_btn p {
-    margin: 0;
+    margin: 15px 0 0 0;
 }
 
 .btn {
@@ -137,7 +136,6 @@ body {
 /* Main */ /* Présentation des restaurants */
 
 article {
-    font-family: roboto;
     display: flex;   
     background-color: #F2F2F2;
 }
@@ -225,7 +223,6 @@ nav a {
 }
 
 .links ul li a {
-    font-family: roboto, sans-serif;
     text-decoration: none;
     color: #ffffff;
 }
