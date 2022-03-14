@@ -285,7 +285,6 @@ section a {
 
 fieldset {
     background-color: #F2F2F2;
-    border: none;
     position: absolute;
     z-index: 2;
     top: 36rem;
@@ -298,4 +297,13 @@ fieldset {
 .title {
     font-family: shrikhand, sans-serif;
     font-weight: normal;
+}
+
+
+
+/* Footer */
+
+.footer-menu {
+    position: relative;
+    z-index: 2;
 }
