@@ -273,6 +273,7 @@ section a {
 #banniere-menu {
     position: absolute;
     z-index: 1;
+    width: 100%;
 }
 
 #banniere-menu img {
@@ -285,6 +286,9 @@ section a {
 
 .menu {
     background-color: #F2F2F2;
+    position: relative;
+    z-index: 2;
+    border-radius: 2rem;
 }
 
 fieldset {
