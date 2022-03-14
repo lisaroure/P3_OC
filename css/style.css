@@ -276,7 +276,7 @@ section a {
     position: relative;
     z-index: 2;
     bottom: 68px;
-    height: 111em;
+    height: 110em;
 }
 
 fieldset {
@@ -286,7 +286,16 @@ fieldset {
     margin: 0;
 }
 
-.title {
+.title h1 {
     font-family: shrikhand, sans-serif;
     font-weight: normal;
+}
+
+.title i {
+    font-size: 37px;
+    color: #888888;
+    position: absolute;
+    z-index: 2;
+    right: 5%;
+    bottom: 5%;
 }
