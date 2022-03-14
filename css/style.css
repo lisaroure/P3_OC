@@ -215,10 +215,6 @@ section a {
     background-color: #383838;
 }
 
-footer a:hover {
-    border-bottom: solid 2px transparent;
-}
-
 .logo-footer {
     font-family: shrikhand, sans-serif;
     font-weight: normal;
