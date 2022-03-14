@@ -289,13 +289,29 @@ fieldset {
 .title h1 {
     font-family: shrikhand, sans-serif;
     font-weight: normal;
+    text-align: center;
 }
 
 .title i {
     font-size: 37px;
-    color: #888888;
+    color: #383838;
     position: absolute;
     z-index: 2;
-    right: 5%;
-    bottom: 5%;
+    right: 36%;
+    bottom: 96%;
 }
+
+.all_cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.entrees {
+    text-transform: capitalize;
+}
+
+.entrees i {
+    color: #99E2D0;
+}
+
