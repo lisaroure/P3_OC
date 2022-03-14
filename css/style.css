@@ -271,12 +271,21 @@ section a {
 }
 
 #banniere-menu {
+    position: absolute;
+    z-index: 1;
+}
+
+#banniere-menu img {
     width: 100%;
     height: 26em;
     object-fit: cover;
 }
 
 /* Menu La palette du goût */
+
+.menu {
+    background-color: #F2F2F2;
+}
 
 fieldset {
     border: none;
