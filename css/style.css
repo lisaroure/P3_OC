@@ -274,7 +274,6 @@ section a {
     position: relative;
     z-index: 2;
     bottom: 63px;
-    height: 45em;
 }
 
 fieldset {
@@ -301,8 +300,9 @@ fieldset {
 
 .all_cards {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .menu-type {
@@ -313,9 +313,12 @@ fieldset {
 
 .cards_menu {
     display: flex;
-    flex-wrap: wrap;
     background-color: #ffffff;
     border-radius: 2rem;
     box-shadow: 2px 7px 15px -13px grey;
+    width: 33rem;
+    height: 9rem;
+    margin: 21px 0 0 0;
+    padding: 0 0 11px 18px;
 }
 
