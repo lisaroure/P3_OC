@@ -255,14 +255,11 @@ section a {
     font-size: 2rem;
 }
 
-.logo-menus {
-    margin: auto;
-}
-
 .logo-menus img {
     display: flex;
     align-items: center;
     width: 60%;
+    margin: auto;
 }
 
 #banniere-menu img {
