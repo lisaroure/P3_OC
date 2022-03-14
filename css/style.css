@@ -240,12 +240,6 @@ section a {
 
 /*Page la palette du goût */
 
-/* Body */
-
-.container {
-    margin: auto;
-}
-
 /* Header */
 
 .header-2 {
@@ -270,11 +264,6 @@ section a {
     height: auto;
 }
 
-#banniere-menu {
-    position: relative;
-    z-index: 1;
-}
-
 #banniere-menu img {
     width: 100%;
     height: 26em;
@@ -283,27 +272,21 @@ section a {
 
 /* Menu La palette du goût */
 
+.menu {
+    position: relative;
+    z-index: 2;
+    bottom: 68px;
+    height: 111em;
+}
+
 fieldset {
     background-color: #F2F2F2;
-    position: absolute;
-    z-index: 2;
-    top: 36rem;
-    width: 100%;
-    height: auto;
-    border: 2rem;
+    border: none;
+    border-radius: 2rem;
     margin: 0;
 }
 
 .title {
     font-family: shrikhand, sans-serif;
     font-weight: normal;
-}
-
-
-
-/* Footer */
-
-.footer-menu {
-    position: relative;
-    z-index: 2;
 }
