@@ -242,9 +242,14 @@ section a {
 
 /* Body */
 
-.container-2 {
-    background-image:url(images/palettedugout.jpg);
+.container {
+    margin: auto;
 }
+
+/* image de menu */
+
+.img-menu
+
 
 .header-2 {
     display: flex;
