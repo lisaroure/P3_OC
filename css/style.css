@@ -248,8 +248,10 @@ section a {
 
 /* image de menu */
 
-.img-menu
-
+.img-menu {
+    width: 63%;
+    height: auto;
+}
 
 .header-2 {
     display: flex;
