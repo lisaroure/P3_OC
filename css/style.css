@@ -296,7 +296,7 @@ fieldset {
     position: absolute;
     z-index: 2;
     right: 36%;
-    bottom: 96%;
+    bottom: 91%;
 }
 
 .all_cards {
@@ -305,11 +305,13 @@ fieldset {
     flex-wrap: wrap;
 }
 
-.entrees {
-    text-transform: capitalize;
+.menu-type {
+    text-transform: uppercase;
+    padding: 0.5rem;
+    border-bottom: 2px solid #99E2D0;
 }
 
-.entrees i {
-    color: #99E2D0;
+.cards_menu {
+
 }
 
