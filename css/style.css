@@ -260,8 +260,9 @@ section a {
 }
 
 .logo-menus img {
+    display: flex;
+    align-items: center;
     width: 60%;
-    height: auto;
 }
 
 #banniere-menu img {
@@ -275,8 +276,8 @@ section a {
 .menu {
     position: relative;
     z-index: 2;
-    bottom: 68px;
-    height: 110em;
+    bottom: 63px;
+    height: 45em;
 }
 
 fieldset {
