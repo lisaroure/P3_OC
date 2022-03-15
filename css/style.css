@@ -308,7 +308,8 @@ fieldset {
 .menu-type {
     text-transform: uppercase;
     padding: 0.5rem;
-    border-bottom: 2px solid #99E2D0;
+    border-bottom: 3px solid #99E2D0;
+    width: 12%;
 }
 
 .cards_menu {
