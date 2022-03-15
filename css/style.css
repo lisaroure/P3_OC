@@ -298,8 +298,8 @@ fieldset {
     color: #383838;
     position: absolute;
     z-index: 2;
-    right: 36%;
-    bottom: 91%;
+    right: 12%;
+    bottom: 93%;
 }
 
 .all_cards {
@@ -322,6 +322,7 @@ fieldset {
     height: 9rem;
     margin: 41px 43px 0 0;
     padding: 21px 0 11px 18px;
+    cursor: pointer;
 }
 
 .cards_menu h2, p {
@@ -355,4 +356,5 @@ label i {
     padding: 21px 48px 21px 48px;
     margin-top: 20px;
     border: none;
+    cursor: pointer;
 }
