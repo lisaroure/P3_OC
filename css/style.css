@@ -304,9 +304,7 @@ fieldset {
 
 .all_cards {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
+    margin: 89px 0 40px 43px;
 }
 
 .menu-type {
@@ -322,7 +320,7 @@ fieldset {
     box-shadow: 2px 7px 15px -13px grey;
     width: 33rem;
     height: 9rem;
-    margin: 38px 76px 0 0;
+    margin: 41px 43px 0 0;
     padding: 21px 0 11px 18px;
 }
 
