@@ -334,3 +334,22 @@ label {
 label p {
     margin: -31px 20px 0 0;
 }
+
+label input {
+    display: none;
+}
+
+label i {
+    color: transparent;
+}
+
+.command_btn {
+    color: white;
+    font-size: 1.2rem;
+    background: linear-gradient(#FF79DA, #9356DC);
+    border-radius: 3rem;
+    box-shadow: 2px 7px 15px -6px grey;
+    padding: 21px 48px 21px 48px;
+    margin-top: 20px;
+    border: none;
+}
