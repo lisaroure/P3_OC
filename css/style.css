@@ -120,6 +120,7 @@
     box-shadow: 2px 7px 15px -13px grey;
     width: 23%;
     height: 100px;
+    cursor: pointer;
 }
 
 .btn i {
@@ -156,7 +157,7 @@ section a {
     display: flex;
     flex-direction: column;
     border-radius: 1rem;
-    width: 45em;
+    width: 40em;
     height: 363px;
     background-color: #ffffff; 
     box-shadow: 2px 7px 15px -13px grey; 
