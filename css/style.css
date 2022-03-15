@@ -313,13 +313,24 @@ fieldset {
 }
 
 .cards_menu {
-    display: flex;
     background-color: #ffffff;
     border-radius: 2rem;
     box-shadow: 2px 7px 15px -13px grey;
     width: 33rem;
     height: 9rem;
     margin: 21px 0 0 0;
-    padding: 0 0 11px 18px;
+    padding: 21px 0 11px 18px;
 }
 
+.cards_menu h2, p {
+    margin: 13px 17px 15px 8px;
+}
+
+label {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+label p {
+    margin: -31px 20px 0 0;
+}
