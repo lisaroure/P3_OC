@@ -79,6 +79,11 @@
     text-align: center;
 }
 
+.explore a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
 /* Fonctionnement */
 
 .explain {
