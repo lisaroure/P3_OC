@@ -210,7 +210,7 @@ section a {
     background-color: #383838;
 }
 
-.footer a, .footer-menu a {
+.footer a{
    text-decoration: none;
 }
 
@@ -338,7 +338,8 @@ label p {
 }
 
 label input {
-    display: none;
+    position: absolute;
+    z-index: -1;
 }
 
 label i {
