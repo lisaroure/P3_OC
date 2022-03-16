@@ -136,10 +136,16 @@
     margin: 0 60px 0 45px;
 }
 
+.card_functioning i:hover, .btn:hover{
+    color: #9356DC;
+    background-color: #F5EDFF;
+}
+
+
 /* Main */ /* Présentation des restaurants */
 
 #restaurants { 
-    background-color: #F2F2F2;
+    background-color: #272727;
     padding: 3rem 20rem;
 }
 
