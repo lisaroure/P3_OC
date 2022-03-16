@@ -223,7 +223,6 @@
 
 #restaurants { 
     background-color: #F2F2F2;
-    padding: 3rem 20rem;
 }
 
 #restaurants h2 {
@@ -235,17 +234,22 @@ section a {
     color: black;
 }
 
+.all_cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .card_choice {
     display: flex;
     flex-direction: column;
     border-radius: 1rem;
-    width: 40em;
-    height: 300px;
+    width: 30em;
+    height: 298px;
     background-color: #ffffff; 
     box-shadow: 2px 7px 15px -13px grey; 
     margin: 13px 20px 39px 45px;
     position: relative;
-
 }
 
 .card_choice h3 {
@@ -255,7 +259,7 @@ section a {
 
 .card_choice img {
     width: 100%;
-    height: 277px;
+    height: 218px;
     object-fit: cover;
     border-radius: 1rem 1rem 0 0;
 }
