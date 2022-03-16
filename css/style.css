@@ -99,7 +99,7 @@
 
 .card_functioning {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     margin-top: 30px;
     gap: 80px;
@@ -370,11 +370,15 @@ label i {
 /* Media Queries */
 
 
-@media screen and (min-width: 980px) {
+@media screen and (min-width: 480px) {
 
     /* Accueil */
 
     .card_functioning {
-        flex-direction: column;
+        flex-direction: row;
+
     }
+
+    
+
 }
