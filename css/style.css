@@ -348,6 +348,7 @@ label p {
 
 label input {
     position: absolute;
+    left: -14em;
 }
 
 label i {
