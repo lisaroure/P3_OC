@@ -285,8 +285,8 @@ section a {
 
 /* Menu La palette du goût */
 
-background-image {
-    src: url(images/lapalettedugout.jpg) alt="photo d'un plat";
+main {
+   background-image: src: url(images/lapalettedugout.jpg) alt="photo d'un plat";
 }
 
 fieldset {
