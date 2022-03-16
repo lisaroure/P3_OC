@@ -2,14 +2,14 @@
 
 * {
     box-sizing: border-box;
-    font-family: roboto, sans-serif;
-    font-weight: bold;
 }
 
     /*Page accueil*/  /* Body */
 
 .container {
     margin: auto;
+    font-family: roboto, sans-serif;
+    font-weight: bold;
 }
 
 /* Header */  
@@ -176,7 +176,7 @@ section a {
     box-shadow: 2px 7px 15px -13px grey; 
     margin: 13px 20px 39px 45px;
     position: relative;
-    z-index: 1;
+
 }
 
 .card_choice h3 {
