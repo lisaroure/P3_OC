@@ -109,11 +109,16 @@
     font-size: 1.3rem;
     background-color: #F7F7F7;
     margin: -21px 0 0 0;
-    padding: 35px 0 83px 0;
+    padding: 12px 25px 74px 25px;
 }
 
 .principal_title p {
+    text-align: center;
     margin: 20px 0 20px 0;
+}
+
+.principal_title h2 {
+    text-align: center;
 }
 
 .explore {
