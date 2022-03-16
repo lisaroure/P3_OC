@@ -366,3 +366,15 @@ label i {
     border: none;
     cursor: pointer;
 }
+
+/* Media Queries */
+
+
+@media screen and (min-width: 980px) {
+
+    /* Accueil */
+
+    .card_functioning {
+        flex-direction: column;
+    }
+}
