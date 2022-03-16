@@ -148,7 +148,7 @@
     padding: 3rem 20rem;
 }
 
-section h2 {
+.explain h2 {
     text-align: center;
     font-size: 2rem;
 }
@@ -285,6 +285,9 @@ section a {
 
 /* Menu La palette du goût */
 
+background-image {
+    src: url(images/lapalettedugout.jpg) alt="photo d'un plat";
+}
 
 fieldset {
     display: flex;
@@ -307,9 +310,7 @@ fieldset {
     font-size: 37px;
     color: #383838;
     position: absolute;
-    z-index: 2;
-    right: 12%;
-    bottom: 93%;
+    right: 15%;
 }
 
 .all_cards {
