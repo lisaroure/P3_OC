@@ -285,9 +285,6 @@ section a {
 
 /* Menu La palette du goût */
 
-main {
-   background-image: url(images/palettedugout.jpg);
-}
 
 fieldset {
     display: flex;
