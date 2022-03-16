@@ -1,5 +1,55 @@
 /* Tout le contenu des pages */
 
+/* Media Queries */
+
+
+@media screen and (min-width: 993px) {
+
+    /* Accueil */
+    /* Header */
+
+    #logo {
+        width: 13%;
+        height: auto;
+    }
+
+    .card_functioning {
+        flex-direction: row;
+    }
+
+    .btn {
+        width: 23%;
+    }
+
+    /* Fonctionnement */
+    
+    .explain h2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Restaurants */
+
+    .all_cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    /* Footer */
+
+    .footer {
+         display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+   
+    .links li {
+        display: flex;
+        justify-content: center;
+    }
+}
+
 * {
     box-sizing: border-box;
 }
@@ -357,55 +407,3 @@ label i {
     cursor: pointer;
 }
 
-/* Media Queries */
-
-
-@media screen and (min-width: 993px) {
-
-    /* Accueil */
-    /* Header */
-
-    #logo {
-        width: 13%;
-        height: auto;
-    }
-
-    .card_functioning {
-        flex-direction: row;
-    }
-
-    .btn {
-        width: 23%;
-    }
-
-    /* Fonctionnement */
-    
-    .explain h2 {
-        display: flex;
-        justify-content: center;
-    }
-
-    /* Restaurants */
-
-    .all_cards {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-    }
-
-    /* Footer */
-
-    .footer {
-         display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-   
-    .links li {
-        display: flex;
-        justify-content: center;
-    }
-
-
-
-}
