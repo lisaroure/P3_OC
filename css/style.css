@@ -92,10 +92,6 @@
     padding: 60px 0 100px 0;
 }
 
-.explain h2 {
-    display: flex;
-    justify-content: center;
-}
 
 .card_functioning {
     display: flex;
@@ -218,13 +214,10 @@ section a {
 /* Footer */
 
 .footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     background-color: #383838;
 }
 
-.footer a{
+.footer a {
    text-decoration: none;
 }
 
@@ -236,8 +229,6 @@ section a {
 }
 
 .links li {
-    display: flex;
-    justify-content: center;
     list-style-type: none;
     margin: 8px;
 }
@@ -387,6 +378,13 @@ label i {
         width: 23%;
     }
 
+    /* Fonctionnement */
+    
+    .explain h2 {
+        display: flex;
+        justify-content: center;
+    }
+
     /* Restaurants */
 
     .all_cards {
@@ -395,6 +393,19 @@ label i {
         justify-content: space-evenly;
     }
 
-    
+    /* Footer */
+
+    .footer {
+         display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+   
+    .links li {
+        display: flex;
+        justify-content: center;
+    }
+
+
 
 }
