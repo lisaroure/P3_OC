@@ -285,11 +285,6 @@ section a {
 
 /* Menu La palette du goût */
 
-.menu {
-    position: relative;
-    z-index: 2;
-    bottom: 63px;
-}
 
 fieldset {
     display: flex;
@@ -355,7 +350,6 @@ label p {
 
 label input {
     position: absolute;
-    z-index: -1;
 }
 
 label i {
