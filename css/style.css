@@ -388,10 +388,6 @@ label i {
     }
 
     /* Fonctionnement */
-
-    .explain {
-        padding: 0;
-    }
     
     .explain h2 {
         text-align: center;
@@ -400,20 +396,33 @@ label i {
 
     /* Restaurants */
 
+    #restaurants {
+        margin-top: 9em;
+    }
+
+    #restaurants h2 {
+        font-size: 2rem;
+        text-align: center;
+        padding-bottom: 1em;
+    }
+
     .all_cards {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-evenly;
+        padding: 15px 100px 50px 100px;
+        margin: 0;
+        row-gap: 4em;
     }
 
     .card_choice {
-        width: 40em;
-        height: 363px;
+        width: 52em;
+        height: 443px;
     }
     
     .card_choice img {
         width: 100%;
-        height: 269px;
+        height: 352px;
     }
 
     .card_choice h3 {
