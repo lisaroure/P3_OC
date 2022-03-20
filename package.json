@@ -4,16 +4,16 @@
   "description": "Projet3OC",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/style.scss:.css/style.css"
+    "sass": "sass --watch ./sass/style.scss:css/style.css"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lisaroure/P3_OC.git"
+    "url": "git+https://github.com/lisaroure/ohmyfood.github.io.git"
   },
   "author": "Lisa Roure",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/lisaroure/P3_OC/issues"
+    "url": "https://github.com/lisaroure/ohmyfood.github.io/issues"
   },
-  "homepage": "https://github.com/lisaroure/P3_OC#readme"
+  "homepage": "https://github.com/lisaroure/ohmyfood.github.io#readme"
 }
