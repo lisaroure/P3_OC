@@ -1,0 +1,273 @@
+/*Variables*/ 
+
+$lightgray: #f7f7f7;
+$mediumgray: #f2f2f2;
+$darkengray: #888888;
+$greyblack: #383838;
+$colorprimary: #9356DC;
+$colorsecondary: #ff79da;
+$colortertiary: #99e2d0;
+$white: #fff;
+$pinklight: #f5edff;
+
+/*Mixins*/ 
+
+@mixin roboto {
+    font-family: 'Roboto', sans-serif;
+}
+@mixin shrikhand {
+    font-family: 'Shrikhand', sans-serif;
+}
+@mixin bold {
+    font-weight: bold;
+}
+@mixin card-shadow {
+    box-shadow: 2px 7px 15px -13px $darkengray;
+}
+@mixin column {
+    display: flex;
+    flex-direction: column;
+}
+@mixin wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+@mixin absolute-icons {
+    position: absolute;
+    z-index: 2;
+    right: 5%;
+}
+
+/* Tout le contenu de la page */ 
+
+*{
+    box-sizing: border-box;
+}
+
+/* Page accueil*/ /*Body*/
+
+.container {
+    margin: auto;
+    @include roboto;
+    @include bold;
+}
+
+/*Header*/ 
+
+#logo {
+    display: block;
+    margin: auto;
+    width: 35%;
+    height: auto;
+    padding: 10px 0 15px 0;
+}
+
+/*Bannière lieu page accueil*/ 
+
+.position {
+    display: flex;
+    justify-content: center;
+    box-shadow: inset 0px 11px 13px -12px $darkengray;
+    background-color: $mediumgray;
+    height: 85px;
+        label {
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+        }
+            input {
+                font-size: 1.5rem;
+                border: none;
+                background-color: $mediumgray;
+                margin: 15px 0 32px 105px;
+            }
+}
+
+.position > i {
+    margin: 26px -84px 0 38px;
+    font-size: 1.2rem;
+}
+
+/*Titre et exploration*/ 
+
+.principal_title {
+    @include column;
+    align-items: center;
+    font-size: 1.3rem;
+    background-color: $lightgray;
+    margin: -21px 0 0 0;
+    padding: 12px 25px 74px 25px;
+    p {
+        margin: 20px 0 20px 0;
+            h2 { 
+                text-align: center;
+            }
+     }
+}
+
+.explore {
+    background: linear-gradient($colorsecondary, $colorprimary);
+    border-radius: 4rem;
+    @include card-shadow;
+    padding-top: 3px;
+    margin-top: 20px;
+    border: none;
+    width: 14em;
+    height: 69px;
+    text-align: center;
+        a {
+            color: $white;
+            text-decoration: none;
+        }
+}
+
+/*Fonctionnement*/ 
+
+.explain {
+    @include bold;
+    font-size: 1.2rem;
+    padding: 60px 15px 100px 27px;
+        h2 {
+            text-align: center;
+            font-size: 2rem;
+        }
+}
+
+.card_functioning {
+    @include column;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 25px;
+}
+
+.number_btn {
+    display: flex;
+    justify-content: center;
+    width: 55px;
+    height: 55px;
+    color: $white;
+    background-color: $colorprimary;
+    border-radius: 3rem;
+    margin: 0 0 0 -13px;
+        p {
+            margin: 15px 0 0 0;
+        }
+}
+
+.btn {
+    @include wrap;
+    align-items: center;
+    background-color: $mediumgray;
+    border-radius: 2rem;
+    @include card-shadow;
+    width: 100%;
+    height: 100px;
+        &:hover {
+            background-color: $pinklight;
+        }
+            i {
+                color: $darkengray;
+                margin: 0 26px 0 32px;
+                    &:hover {
+                        color: $colorprimary;
+                    }
+            }
+}
+
+/*Main*/ /*Présentation des restaurants*/ 
+
+#restaurants {
+    background-color: $mediumgray;
+        h2 {
+            padding: 40px 0 0 30px;
+        }
+}
+
+section a 
+{
+    text-decoration: none;
+    color: #000000;
+}
+
+.all_cards {
+    @include column;
+    align-items: center;
+    padding-bottom: 75px;
+}
+
+.card_choice {
+    @include column;
+    border-radius: 1rem;
+    width: 26em;
+    height: 298px;
+    background-color: $white;
+    @include card-shadow;
+    width: 26em;
+    height: 298px;
+    position: relative;
+    margin: 48px 0 0 0;
+        h3 {
+            margin: 4px 0 0 13px;
+            font-size: 1.5rem;
+        }
+            img {
+                width: 100%;
+                height: 218px;
+                object-fit: cover;
+                border-radius: 1rem 1rem 0 0;
+            }
+             .heart {
+                    font-size: 37px;
+                    color: $darkengray;
+                    @include absolute-icons;
+                   bottom: 5%;
+             }
+                .new {
+                background-color: $colortertiary;
+                color: rgb(0, 143, 79);
+                @include absolute-icons;
+                top: 5%;
+                padding: 0.5rem;
+                }
+                    .site {
+                        margin: 10px 0 0 13px;
+                        font-size: 1.2rem;
+                    }
+}
+
+/*Footer*/ 
+
+.footer {
+    background-color: $greyblack;
+        a {
+            text-decoration: none;
+        }
+}
+
+.logo-footer {
+    @include shrikhand;
+    font-weight: normal;
+    color: $white;
+    padding: 18px 0 3px 30px;
+    margin: 0;
+}
+
+.links ul {
+    padding: 0 0 22px 18px;
+    margin: 0;
+        li {
+            list-style-type: none;
+            margin: 8px;
+            a {
+                text-decoration: none;
+                color: $white;
+            }
+        }
+}
+
+.links i {
+    color: $white;
+    margin: 0 8px 0 0;
+}
+
+/*Page palette du goût*/ 
