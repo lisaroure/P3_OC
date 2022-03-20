@@ -60,8 +60,9 @@
 }
 .principal_title p {
   margin: 20px 0 20px 0;
+  text-align: center;
 }
-.principal_title p h2 {
+.principal_title h2 {
   text-align: center;
 }
 
@@ -221,20 +222,71 @@ section a {
   padding: 0 0 22px 18px;
   margin: 0;
 }
-.links ul li {
+.links li {
   list-style-type: none;
   margin: 8px;
 }
-.links ul li a {
+.links li a {
   text-decoration: none;
   color: #fff;
 }
-
 .links i {
   color: #fff;
   margin: 0 8px 0 0;
 }
 
 /*Page palette du goût*/
+.header-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+.header-2 i {
+  color: #383838;
+  font-size: 2rem;
+}
+
+.logo-menus img {
+  display: flex;
+  align-items: center;
+  width: 60%;
+  margin: auto;
+}
+
+#banniere-menu img {
+  width: 100%;
+  height: 26em;
+  object-fit: cover;
+}
+
+/*Menu La palette du goût*/
+fieldset {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 4rem 4rem 0 0;
+  margin: -65px 0 0 0;
+  position: relative;
+}
+
+.title h1 {
+  font-family: "Shrikhand", sans-serif;
+  font-weight: normal;
+  margin: 30px 61px 5px 0;
+}
+.title i {
+  font-size: 28px;
+  color: #383838;
+  position: absolute;
+  right: 5%;
+}
+
+.all_cards {
+  display: flex;
+}
 
 /*# sourceMappingURL=style.css.map */
