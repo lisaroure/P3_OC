@@ -200,12 +200,10 @@ section {
 .card_choice {
     @include column;
     border-radius: 1rem;
-    width: 26em;
-    height: 298px;
+    width: 24em;
+    height: 291px;
     background-color: $white;
     @include card-shadow;
-    width: 26em;
-    height: 298px;
     position: relative;
     margin: 48px 0 0 0;
         h3 {
