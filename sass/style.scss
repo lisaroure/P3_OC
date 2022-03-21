@@ -38,6 +38,12 @@ $pinklight: #f5edff;
     right: 5%;
 }
 
+@mixin desktop-only {
+    @media screen and (min-width: 993px) {
+        @content;
+    }
+}
+
 /* Tout le contenu de la page */ 
 
 *{
@@ -60,6 +66,10 @@ $pinklight: #f5edff;
     width: 35%;
     height: auto;
     padding: 10px 0 15px 0;
+    @include desktop-only {
+        width: 13%;
+        height: auto;
+    }
 }
 
 /*Bannière lieu page accueil*/ 
@@ -131,6 +141,10 @@ $pinklight: #f5edff;
         h2 {
             text-align: center;
             font-size: 2rem;
+            @include desktop-only {
+                text-align: center;
+                font-size: 2rem;
+            }
         }
 }
 
@@ -139,6 +153,10 @@ $pinklight: #f5edff;
     justify-content: center;
     margin-top: 30px;
     gap: 25px;
+    @include desktop-only {
+        flex-direction: row;
+        gap: 80px;
+    }
 }
 
 .number_btn {
@@ -163,6 +181,9 @@ $pinklight: #f5edff;
     @include card-shadow;
     width: 100%;
     height: 100px;
+    @include desktop-only {
+            width: 29%;
+        }
         &:hover {
             background-color: $pinklight;
         }
@@ -181,6 +202,9 @@ $pinklight: #f5edff;
     background-color: $mediumgray;
         h2 {
             padding: 40px 0 0 30px;
+            @include desktop-only {
+                text-align: center;
+            }
         }
 }
 
@@ -195,26 +219,45 @@ section {
     @include column;
     align-items: center;
     padding-bottom: 75px;
+        @include desktop-only {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            padding: 15px 100px 50px 100px;
+            margin: 0;
+            row-gap: 4em;
+        }
 }
 
 .card_choice {
     @include column;
     border-radius: 1rem;
-    width: 24em;
-    height: 291px;
+    width: 21em;
+    height: 269px;
     background-color: $white;
     @include card-shadow;
     position: relative;
     margin: 48px 0 0 0;
+    @include desktop-only {
+        width: 32em;
+        height: 307px;
+    }
         h3 {
             margin: 4px 0 0 13px;
             font-size: 1.5rem;
+            @include desktop-only {
+                margin: 16px, 0 0 26px;
+            }
         }
             img {
                 width: 100%;
-                height: 218px;
+                height: 195px;
                 object-fit: cover;
                 border-radius: 1rem 1rem 0 0;
+                @include desktop-only {
+                    width: 100%;
+                    height: 230px;
+                }
             }
              .heart {
                     font-size: 37px;
@@ -232,6 +275,9 @@ section {
                     .site {
                         margin: 10px 0 0 13px;
                         font-size: 1.2rem;
+                        @include desktop-only {
+                            margin: 10px 0 0 25px;
+                        }
                     }
 }
 
@@ -239,6 +285,10 @@ section {
 
 .footer {
     background-color: $greyblack;
+    @include desktop-only {
+       @include column;
+        align-items: center;
+    }
         a {
             text-decoration: none;
         }
@@ -260,6 +310,10 @@ section {
         li {
             list-style-type: none;
             margin: 8px;
+            @include desktop-only {
+                display: flex;
+                justify-content: center;
+            }
             a {
                 text-decoration: none;
                 color: $white;
@@ -328,8 +382,12 @@ fieldset {
             }
 }
 
-.all_cards {
+.all_cards-menu {
     display: flex;
+    @include desktop-only {
+        gap: 29px;
+        margin: 30px;
+    }
 }
 
 .menu-type {

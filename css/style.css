@@ -22,6 +22,12 @@
   height: auto;
   padding: 10px 0 15px 0;
 }
+@media screen and (min-width: 993px) {
+  #logo {
+    width: 13%;
+    height: auto;
+  }
+}
 
 /*Bannière lieu page accueil*/
 .position {
@@ -92,6 +98,12 @@
   text-align: center;
   font-size: 2rem;
 }
+@media screen and (min-width: 993px) {
+  .explain h2 {
+    text-align: center;
+    font-size: 2rem;
+  }
+}
 
 .card_functioning {
   display: flex;
@@ -99,6 +111,12 @@
   justify-content: center;
   margin-top: 30px;
   gap: 25px;
+}
+@media screen and (min-width: 993px) {
+  .card_functioning {
+    flex-direction: row;
+    gap: 80px;
+  }
 }
 
 .number_btn {
@@ -125,6 +143,11 @@
   width: 100%;
   height: 100px;
 }
+@media screen and (min-width: 993px) {
+  .btn {
+    width: 29%;
+  }
+}
 .btn:hover {
   background-color: #f5edff;
 }
@@ -144,6 +167,11 @@
 #restaurants h2 {
   padding: 40px 0 0 30px;
 }
+@media screen and (min-width: 993px) {
+  #restaurants h2 {
+    text-align: center;
+  }
+}
 
 section a {
   text-decoration: none;
@@ -156,27 +184,54 @@ section a {
   align-items: center;
   padding-bottom: 75px;
 }
+@media screen and (min-width: 993px) {
+  .all_cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 15px 100px 50px 100px;
+    margin: 0;
+    row-gap: 4em;
+  }
+}
 
 .card_choice {
   display: flex;
   flex-direction: column;
   border-radius: 1rem;
-  width: 24em;
-  height: 291px;
+  width: 21em;
+  height: 269px;
   background-color: #fff;
   box-shadow: 2px 7px 15px -13px #888888;
   position: relative;
   margin: 48px 0 0 0;
 }
+@media screen and (min-width: 993px) {
+  .card_choice {
+    width: 32em;
+    height: 307px;
+  }
+}
 .card_choice h3 {
   margin: 4px 0 0 13px;
   font-size: 1.5rem;
 }
+@media screen and (min-width: 993px) {
+  .card_choice h3 {
+    margin: 16px, 0 0 26px;
+  }
+}
 .card_choice img {
   width: 100%;
-  height: 218px;
+  height: 195px;
   object-fit: cover;
   border-radius: 1rem 1rem 0 0;
+}
+@media screen and (min-width: 993px) {
+  .card_choice img {
+    width: 100%;
+    height: 230px;
+  }
 }
 .card_choice .heart {
   font-size: 37px;
@@ -199,10 +254,22 @@ section a {
   margin: 10px 0 0 13px;
   font-size: 1.2rem;
 }
+@media screen and (min-width: 993px) {
+  .card_choice .site {
+    margin: 10px 0 0 25px;
+  }
+}
 
 /*Footer*/
 .footer {
   background-color: #383838;
+}
+@media screen and (min-width: 993px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .footer a {
   text-decoration: none;
@@ -223,6 +290,12 @@ section a {
 .links li {
   list-style-type: none;
   margin: 8px;
+}
+@media screen and (min-width: 993px) {
+  .links li {
+    display: flex;
+    justify-content: center;
+  }
 }
 .links li a {
   text-decoration: none;
@@ -283,8 +356,14 @@ fieldset {
   right: 5%;
 }
 
-.all_cards {
+.all_cards-menu {
   display: flex;
+}
+@media screen and (min-width: 993px) {
+  .all_cards-menu {
+    gap: 29px;
+    margin: 30px;
+  }
 }
 
 .menu-type {
