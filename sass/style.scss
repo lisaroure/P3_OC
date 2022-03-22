@@ -224,23 +224,22 @@ section {
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: space-evenly;
-            padding: 15px 100px 50px 100px;
-            margin: 0;
+            padding: 15px 100px 100px 100px;
         }
 }
 
 .card_choice {
     @include column;
     border-radius: 1rem;
-    width: 21em;
+    width: 93%;
     height: 269px;
     background-color: $white;
     @include card-shadow;
     position: relative;
     margin: 48px 0 0 0;
     @include desktop-only {
-        width: 53em;
-        height: 26em;
+        width: 46%;
+        height: 29em;
     }
         h3 {
             margin: 4px 0 0 13px;
@@ -256,7 +255,7 @@ section {
                 border-radius: 1rem 1rem 0 0;
                 @include desktop-only {
                     width: 100%;
-                    height: 21em;
+                    height: 24em;
                 }
             }
              .heart {
