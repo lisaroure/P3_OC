@@ -170,6 +170,7 @@
 @media screen and (min-width: 993px) {
   #restaurants h2 {
     text-align: center;
+    font-size: 2rem;
   }
 }
 
@@ -191,7 +192,6 @@ section a {
     justify-content: space-evenly;
     padding: 15px 100px 50px 100px;
     margin: 0;
-    row-gap: 4em;
   }
 }
 
@@ -208,8 +208,8 @@ section a {
 }
 @media screen and (min-width: 993px) {
   .card_choice {
-    width: 32em;
-    height: 307px;
+    width: 53em;
+    height: 26em;
   }
 }
 .card_choice h3 {
@@ -230,7 +230,7 @@ section a {
 @media screen and (min-width: 993px) {
   .card_choice img {
     width: 100%;
-    height: 230px;
+    height: 21em;
   }
 }
 .card_choice .heart {

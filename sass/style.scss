@@ -204,6 +204,7 @@ $pinklight: #f5edff;
             padding: 40px 0 0 30px;
             @include desktop-only {
                 text-align: center;
+                font-size: 2rem;
             }
         }
 }
@@ -225,7 +226,6 @@ section {
             justify-content: space-evenly;
             padding: 15px 100px 50px 100px;
             margin: 0;
-            row-gap: 4em;
         }
 }
 
@@ -239,8 +239,8 @@ section {
     position: relative;
     margin: 48px 0 0 0;
     @include desktop-only {
-        width: 32em;
-        height: 307px;
+        width: 53em;
+        height: 26em;
     }
         h3 {
             margin: 4px 0 0 13px;
@@ -256,7 +256,7 @@ section {
                 border-radius: 1rem 1rem 0 0;
                 @include desktop-only {
                     width: 100%;
-                    height: 230px;
+                    height: 21em;
                 }
             }
              .heart {
