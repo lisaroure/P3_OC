@@ -379,10 +379,10 @@ fieldset {
 }
 
 .all_cards-menu {
-    display: flex;
+    @include column;
     @include desktop-only {
+        flex-direction: row;
         gap: 80px;
-        margin: 30px;
     }
 }
 
@@ -403,25 +403,34 @@ fieldset {
     margin: 41px 52px 0 0;
     padding: 21px 0 11px 18px;
     cursor: pointer;
-        h2, p {
-            margin: 0 17px 15px 8px;
-        }
-            label {
-                display: flex;
-                flex-direction: row-reverse;
-                @include desktop-only {
-                    @include column;
+    position: relative;
+    @include desktop-only {
+        margin: 40px 0 0 0;
+        width: 32em;
+    } 
+    .price {
+        position: absolute;
+        right: 8%;
+        bottom: 30%;
+        font-weight: bold;
+    }
+        label {
+             @include column;
+
+            .menu-title {
+                    font-weight: bold;
                 }
-                    p {
-                        margin: -31px 20px 0 0;
-                    }
-                        input {
-                            position: absolute;
-                            left: -14em;
-                        }
-                            i {
-                                color: transparent;
-                            }
+                .accomp {
+                     margin-top: 10px;
+                }
+                
+                input {
+                    position: absolute;
+                    left: -1999px;
+                }
+                    i {
+                        color: transparent;
+                }
             }
 }
 
