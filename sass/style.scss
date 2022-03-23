@@ -255,12 +255,32 @@ section {
                     height: 16em;
                 }
             }
-             .heart {
-                    font-size: 37px;
-                    color: $darkengray;
-                    @include absolute-icons;
-                   bottom: 5%;
-             }
+             .fa-heart {
+                font-size: 37px;
+                color: $darkengray;
+                position: absolute;
+                bottom: 5%;
+                right: 5%;
+                z-index: 1;
+                    &:hover {
+                        &::after {
+                            opacity: 1;
+                    }
+                    &::after {
+                        content: "\f004";
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        right: 0;
+                        left: 0;
+                        z-index: -1;
+                        font-weight: bold;
+                        color: inherit;
+                        background: linear-gradient(#9356DC, #ff79da);
+                    }
+                }
+                    
+                }
                 .new {
                 background-color: $colortertiary;
                 color: rgb(0, 143, 79);
