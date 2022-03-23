@@ -256,32 +256,35 @@ section {
                 }
             }
              .heart {
+                i {
                 font-size: 37px;
                 color: $darkengray;
                 position: absolute;
                 bottom: 5%;
                 right: 5%;
                 z-index: 1;
-                opacity: 1;
                      &:hover {
-                         z-index: -1;
                          opacity: 0;
-                        .heart-full{                            
-                            opacity: 1;
-                            
+                         z-index: -1;
+                        .heart-full > i {                            
+                            opacity: 1; 
+                            z-index: 1;
                         }
                      } 
+                }
             }
                     .heart-full {
-                        position: absolute;
-                        font-size: 37px;
-                        background-clip: text;
-                        -webkit-text-fill-color: transparent;
-                        background: -webkit-linear-gradient(#9356DC, #ff79da);
-                        opacity: 0;
-                        z-index: -1;
-                        left: 89%;
-                        bottom: 18px;
+                        i {
+                            position: relative;
+                            font-size: 37px;
+                            font-weight: bold;
+                            background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            background: -webkit-linear-gradient(#9356DC, #ff79da);
+                            z-index: -1;
+                            left: 89%;
+                            bottom: 38px;
+                        }
                     }
                 .new {
                 background-color: $colortertiary;
