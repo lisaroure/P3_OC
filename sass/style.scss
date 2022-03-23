@@ -381,7 +381,7 @@ fieldset {
 .all_cards-menu {
     display: flex;
     @include desktop-only {
-        gap: 29px;
+        gap: 80px;
         margin: 30px;
     }
 }
@@ -409,6 +409,9 @@ fieldset {
             label {
                 display: flex;
                 flex-direction: row-reverse;
+                @include desktop-only {
+                    @include column;
+                }
                     p {
                         margin: -31px 20px 0 0;
                     }

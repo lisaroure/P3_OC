@@ -360,7 +360,7 @@ fieldset {
 }
 @media screen and (min-width: 993px) {
   .all_cards-menu {
-    gap: 29px;
+    gap: 80px;
     margin: 30px;
   }
 }
@@ -389,6 +389,12 @@ fieldset {
 .cards_menu label {
   display: flex;
   flex-direction: row-reverse;
+}
+@media screen and (min-width: 993px) {
+  .cards_menu label {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .cards_menu label p {
   margin: -31px 20px 0 0;
