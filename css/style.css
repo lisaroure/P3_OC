@@ -232,28 +232,32 @@ section a {
     height: 16em;
   }
 }
-.card_choice .fa-heart {
+.card_choice .heart {
   font-size: 37px;
   color: #888888;
   position: absolute;
   bottom: 5%;
   right: 5%;
   z-index: 1;
-}
-.card_choice .fa-heart:hover::after {
   opacity: 1;
 }
-.card_choice .fa-heart:hover::after {
-  content: "\f004";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
+.card_choice .heart:hover {
   z-index: -1;
-  font-weight: bold;
-  color: inherit;
-  background: linear-gradient(#9356DC, #ff79da);
+  opacity: 0;
+}
+.card_choice .heart:hover .heart-full {
+  opacity: 1;
+}
+.card_choice .heart-full {
+  position: absolute;
+  font-size: 37px;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(#9356DC, #ff79da);
+  opacity: 0;
+  z-index: -1;
+  left: 89%;
+  bottom: 18px;
 }
 .card_choice .new {
   background-color: #99e2d0;
