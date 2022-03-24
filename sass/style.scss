@@ -285,13 +285,13 @@ section {
                             left: 89%;
                             bottom: 38px;
                         }
-                .new {
-                background-color: $colortertiary;
-                color: rgb(0, 143, 79);
-                @include absolute-icons;
-                top: 5%;
-                padding: 0.5rem;
-                }
+                        .new {
+                        background-color: $colortertiary;
+                        color: rgb(0, 143, 79);
+                        @include absolute-icons;
+                        top: 5%;
+                        padding: 0.5rem;
+                        }
                     .site {
                         margin: 10px 0 0 13px;
                         font-size: 1.2rem;
