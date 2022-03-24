@@ -238,12 +238,12 @@ section a {
   position: absolute;
   bottom: 5%;
   left: 90%;
-  background-clip: text;
   transform: translateY(-50%);
   cursor: pointer;
 }
 .card_choice .fas {
   -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
   background: -webkit-linear-gradient(#9356DC, #ff79da);
   transition: opacity 250ms;
   opacity: 0;
