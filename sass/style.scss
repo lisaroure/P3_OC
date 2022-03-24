@@ -255,35 +255,24 @@ section {
                     height: 16em;
                 }
             }
-             .heart {
+             i {
                 font-size: 37px;
                 color: $darkengray;
-                position: relative;
-                bottom: 15%;
+                position: absolute;
+                bottom: 5%;
                 left: 90%;
-                z-index: 1;
-                     &:hover {
-                        .heart__full {                            
-                            opacity: 1; 
-                     } 
-                }
-                    .heart-full {
-                            position: absolute;
-                            top: 0;
-                            right: 0;
-                            bottom: 0;
-                            left: 0;
-                            font-size: 37px;
-                            font-weight: bold;
-                            background-clip: text;
-                            -webkit-text-fill-color: transparent;
-                            background: -webkit-linear-gradient(#9356DC, #ff79da);
-                            transition: opacity 250ms;
-                            z-index: -1;
-                            opacity: 0;
-                            transition: opacity 250ms;
-                            left: 89%;
-                            bottom: 38px;
+                background-clip: text;
+                transform: translateY(-50%); 
+                cursor: pointer;
+             }
+                .fas {
+                        -webkit-text-fill-color: transparent;
+                        background: -webkit-linear-gradient($colorprimary, $colorsecondary);
+                        transition: opacity 250ms;
+                        opacity: 0; 
+                                &:hover {                            
+                                opacity: 1; 
+                                } 
                         }
                         .new {
                         background-color: $colortertiary;
@@ -292,14 +281,13 @@ section {
                         top: 5%;
                         padding: 0.5rem;
                         }
-                    .site {
-                        margin: 10px 0 0 13px;
-                        font-size: 1.2rem;
-                        @include desktop-only {
-                            margin: 10px 0 0 25px;
+                        .site {
+                            margin: 10px 0 0 13px;
+                            font-size: 1.2rem;
+                            @include desktop-only {
+                                margin: 10px 0 0 25px;
+                            }
                         }
-                    }
-            }
         }
 /*Footer*/ 
 

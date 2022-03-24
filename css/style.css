@@ -232,36 +232,26 @@ section a {
     height: 16em;
   }
 }
-.card_choice .heart {
+.card_choice i {
   font-size: 37px;
   color: #888888;
-  position: relative;
-  bottom: 15%;
-  left: 90%;
-  z-index: 1;
-}
-.card_choice .heart:hover .heart__full {
-  opacity: 1;
-}
-.card_choice .heart .heart-full {
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  font-size: 37px;
-  font-weight: bold;
+  bottom: 5%;
+  left: 90%;
   background-clip: text;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.card_choice .fas {
   -webkit-text-fill-color: transparent;
   background: -webkit-linear-gradient(#9356DC, #ff79da);
   transition: opacity 250ms;
-  z-index: -1;
   opacity: 0;
-  transition: opacity 250ms;
-  left: 89%;
-  bottom: 38px;
 }
-.card_choice .heart .new {
+.card_choice .fas:hover {
+  opacity: 1;
+}
+.card_choice .new {
   background-color: #99e2d0;
   color: #008f4f;
   position: absolute;
@@ -270,12 +260,12 @@ section a {
   top: 5%;
   padding: 0.5rem;
 }
-.card_choice .heart .site {
+.card_choice .site {
   margin: 10px 0 0 13px;
   font-size: 1.2rem;
 }
 @media screen and (min-width: 993px) {
-  .card_choice .heart .site {
+  .card_choice .site {
     margin: 10px 0 0 25px;
   }
 }
