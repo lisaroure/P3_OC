@@ -310,31 +310,33 @@ section a {
   }
 }
 
-.card_choice .fa-heart {
+.card_choice .heart {
   font-size: 37px;
   color: #888888;
-  position: absolute;
+  position: relative;
   bottom: 5%;
   right: 5%;
   z-index: 1;
 }
 
-.card_choice .fa-heart:hover::after {
+.card_choice .heart:hover .heart__full {
   opacity: 1;
 }
 
-.card_choice .fa-heart:hover::after {
-  content: "\f004";
+.card_choice .heart-full i {
   position: absolute;
   top: 0;
-  bottom: 0;
   right: 0;
+  bottom: 0;
   left: 0;
-  z-index: -1;
+  font-size: 37px;
   font-weight: bold;
-  color: inherit;
-  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#ff79da));
-  background: linear-gradient(#9356DC, #ff79da);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(#9356DC, #ff79da);
+  z-index: -1;
+  left: 89%;
+  bottom: 38px;
 }
 
 .card_choice .new {
