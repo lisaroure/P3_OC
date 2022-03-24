@@ -243,10 +243,10 @@ section a {
 }
 .card_choice .fas {
   -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
   background: -webkit-linear-gradient(#9356DC, #ff79da);
   transition: opacity 250ms;
   opacity: 0;
+  -webkit-background-clip: text;
 }
 .card_choice .fas:hover {
   opacity: 1;

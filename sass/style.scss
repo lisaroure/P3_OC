@@ -266,10 +266,10 @@ section {
              }
                 .fas {
                         -webkit-text-fill-color: transparent;
-                        -webkit-background-clip: text;
                         background: -webkit-linear-gradient($colorprimary, $colorsecondary);
                         transition: opacity 250ms;
                         opacity: 0; 
+                        -webkit-background-clip: text;
                                 &:hover {                            
                                 opacity: 1; 
                                 } 
