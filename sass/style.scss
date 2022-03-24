@@ -178,7 +178,7 @@ $pinklight: #f5edff;
     width: 100%;
     height: 86px;
     @include desktop-only {
-            width: 22%;
+            width: 30%;
         }
         &:hover {
             background-color: $pinklight;
@@ -188,7 +188,7 @@ $pinklight: #f5edff;
         }
             i {
                 color: $darkengray;
-                margin: 0 32px 0 33px;
+                margin: 0 32px 0 18px;
                 font-size: 16px;
             }
 }
@@ -267,9 +267,7 @@ section {
                             opacity: 1; 
                      } 
                 }
-            }
                     .heart-full {
-                        i {
                             position: absolute;
                             top: 0;
                             right: 0;
