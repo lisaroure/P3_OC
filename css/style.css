@@ -144,7 +144,7 @@
 }
 @media screen and (min-width: 993px) {
   .btn {
-    width: 22%;
+    width: 30%;
   }
 }
 .btn:hover {
@@ -155,7 +155,7 @@
 }
 .btn i {
   color: #888888;
-  margin: 0 32px 0 33px;
+  margin: 0 32px 0 18px;
   font-size: 16px;
 }
 
@@ -232,30 +232,31 @@ section a {
     height: 16em;
   }
 }
-.card_choice .heart i {
+.card_choice .heart {
   font-size: 37px;
   color: #888888;
-  position: absolute;
-  bottom: 5%;
-  right: 5%;
-  z-index: 1;
-}
-.card_choice .heart i:hover {
-  opacity: 0;
-  z-index: -1;
-}
-.card_choice .heart i:hover .heart-full > i {
-  opacity: 1;
-  z-index: 1;
-}
-.card_choice .heart-full i {
   position: relative;
+  bottom: 15%;
+  left: 90%;
+  z-index: 1;
+}
+.card_choice .heart:hover__full {
+  opacity: 1;
+}
+.card_choice .heart__full {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   font-size: 37px;
   font-weight: bold;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   background: -webkit-linear-gradient(#9356DC, #ff79da);
+  transition: opacity 250ms;
   z-index: -1;
+  opacity: 0;
   left: 89%;
   bottom: 38px;
 }
