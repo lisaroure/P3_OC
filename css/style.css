@@ -149,6 +149,7 @@
 }
 .btn:hover {
   background-color: #f5edff;
+  box-shadow: 2px 7px 15px -8px #888888;
 }
 .btn:hover i {
   color: #9356DC;
@@ -204,6 +205,13 @@ section a {
   box-shadow: 2px 7px 15px -13px #888888;
   position: relative;
   margin: 48px 0 0 0;
+  transform: scale(1);
+}
+.card_choice:hover {
+  transform: scale(1.1);
+  box-shadow: 2px 7px 15px -8px #888888;
+  transform-origin: bottom;
+  transition: 400ms;
 }
 @media screen and (min-width: 993px) {
   .card_choice {
