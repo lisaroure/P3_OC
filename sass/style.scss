@@ -424,10 +424,17 @@ fieldset {
     padding: 21px 0 11px 18px;
     cursor: pointer;
     position: relative;
+    scale: (0);
     @include desktop-only {
         margin: 40px 0 0 0;
-        width: 32em;
+        width: 23em;
+        height: 86px;
     } 
+    &:hover {
+        transform: scale(1.1);
+        box-shadow: 2px 7px 15px -8px #888888;
+        transition: 400ms;
+    }
     .price {
         position: absolute;
         right: 8%;
