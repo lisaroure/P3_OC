@@ -403,7 +403,7 @@ fieldset {
   padding: 21px 0 11px 18px;
   cursor: pointer;
   position: relative;
-  scale: 0;
+  z-index: 1;
 }
 @media screen and (min-width: 993px) {
   .cards_menu {
@@ -417,28 +417,40 @@ fieldset {
   box-shadow: 2px 7px 15px -8px #888888;
   transition: 400ms;
 }
+.cards_menu:hover .check-circle {
+  transform: translate(0, 100px);
+}
+.cards_menu:hover .check-circle i {
+  opacity: 1;
+}
 .cards_menu .price {
   position: absolute;
-  right: 8%;
-  bottom: 30%;
+  right: 5%;
+  top: 43px;
   font-weight: bold;
 }
-.cards_menu label {
-  display: flex;
-  flex-direction: column;
+.cards_menu h3 {
+  margin: 0;
 }
-.cards_menu label .menu-title {
-  font-weight: bold;
-}
-.cards_menu label .accomp {
+.cards_menu .accomp {
   margin-top: 10px;
 }
-.cards_menu label input {
+.cards_menu .check-circle i {
   position: absolute;
-  left: -1999px;
-}
-.cards_menu label i {
-  color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 100%;
+  bottom: 104px;
+  width: 4em;
+  height: 79px;
+  margin: 0 0 0 -15px;
+  font-size: 1.5rem;
+  background-color: #99e2d0;
+  color: #fff;
+  opacity: 0;
+  border-radius: 0 20px 20px 0;
+  transition: transform 330ms ease-in-out;
 }
 
 .command_btn {
