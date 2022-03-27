@@ -25,6 +25,11 @@ $pinklight: #f5edff;
     display: flex;
     flex-direction: column;
 }
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 @mixin wrap {
     display: flex;
     flex-wrap: wrap;
@@ -424,57 +429,67 @@ fieldset {
     padding: 21px 0 11px 18px;
     cursor: pointer;
     position: relative;
-    z-index: 1;
     @include desktop-only {
         margin: 40px 0 0 0;
         width: 23em;
         height: 86px;
     } 
     &:hover {
-        transform: scale(1.1);
-        box-shadow: 2px 7px 15px -8px #888888;
-        transition: 400ms; 
-        .check-circle {
-            transform: translate(0, 100px); 
-            i {
-             opacity: 1;    
-            } 
+        box-shadow: 2px 7px 15px -8px #888888; 
+        .accomp {
+            width: calc(90% - 80px);
         }
-    }
+            .check__bg {
+                opacity: 1;
+                transform: translateX(-80px);
+                .check__icon {
+                    i {
+                    transform: rotate(360deg);
+                    }
+                }
+            }
+                .price {
+                    transform: translateX(-80px);
+                } 
+            }
+
     .price {
         position: absolute;
-        right: 5%;
-        top: 43px;
+        right: 3%;
+        top: 37px;
         font-weight: bold;
+        transition: transform 400ms linear;
     }
        h3 {
           margin: 0;
         }
             .accomp {
+                width: 90%;
                  margin-top: 10px;
+                 transition: width 350ms linear;
             }
                 
-                .check-circle {
-                    i {
-                        position: absolute;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        left: 100%;
-                        bottom: 104px;
-                        width: 4em;
-                        height: 79px;
-                        margin: 0 0 0 -15px;
+                .check__bg {
+                    @include center;
+                    position: absolute;
+                    border-radius: 0 1rem 1rem 0;
+                    height: 86px;
+                    width: 63px;
+                    bottom: 0;
+                    left: 105%;
+                    background-color: $colortertiary;
+                    color: $white;
+                    transition: transform 400ms linear;  
+                    transform-origin: right;                  
+                    opacity: 0;
+                    .check__icon {
+                        i {
                         font-size: 1.5rem;
-                        background-color: $colortertiary;
-                        color: $white;
-                        opacity: 0;
-                        border-radius: 0 20px 20px 0;
-                        transition: transform 330ms ease-in-out;
+                        transition: transform 600ms;
+                        }
                     }
                 }
-    }
-
+        }
 
 .command_btn {
     color: $white;
@@ -487,3 +502,4 @@ fieldset {
     border: none;
     cursor: pointer;
 }
+
