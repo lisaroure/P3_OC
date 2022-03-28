@@ -394,13 +394,15 @@ fieldset {
 }
 
 .cards_menu {
+  display: flex;
+  flex-direction: column;
   background-color: #fff;
   border-radius: 1rem;
   box-shadow: 2px 7px 15px -13px #888888;
   width: 100%;
   height: 6em;
   margin: 41px 52px 0 0;
-  padding: 21px 0 11px 18px;
+  padding: 21px 0 0 18px;
   cursor: pointer;
   position: relative;
 }
@@ -414,35 +416,35 @@ fieldset {
 .cards_menu:hover {
   box-shadow: 2px 7px 15px -8px #888888;
 }
-.cards_menu:hover .accomp {
-  width: calc(90% - 80px);
-}
-.cards_menu:hover .check__bg {
+.cards_menu:hover .cards_menu--icon {
   opacity: 1;
   transform: translateX(-80px);
 }
-.cards_menu:hover .check__bg .check__icon i {
+.cards_menu:hover .cards_menu--icon i {
   transform: rotate(360deg);
 }
-.cards_menu:hover .price {
+.cards_menu:hover .cards_menu--price {
   transform: translateX(-80px);
+  margin: -32px 0px 0 333px;
 }
-.cards_menu .price {
-  position: absolute;
-  right: 3%;
-  top: 37px;
+.cards_menu .accomp {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.cards_menu .cards_menu--price {
   font-weight: bold;
   transition: transform 400ms linear;
+  margin: -32px 0 0 19rem;
 }
 .cards_menu h3 {
   margin: 0;
 }
 .cards_menu .accomp {
-  width: 90%;
   margin-top: 10px;
-  transition: width 350ms linear;
+  transition: width 400ms linear;
 }
-.cards_menu .check__bg {
+.cards_menu .cards_menu--icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -453,14 +455,13 @@ fieldset {
   bottom: 0;
   left: 105%;
   background-color: #99e2d0;
-  color: #fff;
-  transition: transform 400ms linear;
-  transform-origin: right;
+  transition: transform 400ms ease-in;
   opacity: 0;
 }
-.cards_menu .check__bg .check__icon i {
+.cards_menu .cards_menu--icon i {
   font-size: 1.5rem;
   transition: transform 600ms;
+  color: #fff;
 }
 
 .command_btn {
