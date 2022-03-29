@@ -372,6 +372,18 @@ fieldset {
   color: #383838;
   position: absolute;
   right: 5%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.title .fas {
+  -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(#9356DC, #ff79da);
+  transition: opacity 250ms;
+  opacity: 0;
+  -webkit-background-clip: text;
+}
+.title .fas:hover {
+  opacity: 1;
 }
 
 .all_cards-menu {
