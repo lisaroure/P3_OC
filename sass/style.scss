@@ -390,7 +390,7 @@ fieldset {
     border: none;
     border-radius: 4rem 4rem 0 0;
     margin: -65px 0 0 0;
-    position: relative;
+    position: relative;       
 }
 
 .title {
@@ -420,6 +420,12 @@ fieldset {
 }
 
 .all_cards-menu {
+    @for $i from 1 through 9 {
+    &:nth-child(#{$i}) {
+        color: #000000;
+        }
+    }
+    overflow: hidden;
     @include column;
     @include desktop-only {
         flex-direction: row;
@@ -436,6 +442,10 @@ fieldset {
 }
 
 .cards_menu {
+
+
+    animation: appear 900ms ease-in-out 1ms;
+    transform-origin: top;
     @include column;
     background-color: $white;
     border-radius: 1rem;
@@ -522,4 +532,16 @@ fieldset {
     margin: 30px;
     border: none;
     cursor: pointer;
+}
+
+/* Keyframes */ 
+
+@keyframes appear {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
