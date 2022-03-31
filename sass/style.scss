@@ -244,12 +244,8 @@ section {
     @include card-shadow;
     position: relative;
     margin: 48px 0 0 0;
-    transform: scale(1);
     &:hover {
-        transform: scale(1.1);
-        box-shadow: 2px 7px 15px -8px #888888;
-        transform-origin: bottom;
-        transition: 400ms;
+        box-shadow: 2px 7px 15px -8px #888888; 
     }
     @include desktop-only {
         width: 34%;
