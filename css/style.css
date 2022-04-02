@@ -410,7 +410,7 @@ fieldset {
   background-color: #fff;
   border-radius: 1rem;
   box-shadow: 2px 7px 15px -13px #888888;
-  width: 100%;
+  width: 23em;
   height: 6em;
   margin: 0 0 20px 0;
   cursor: pointer;
@@ -443,7 +443,12 @@ fieldset {
   display: flex;
   align-items: flex-end;
   font-weight: bold;
-  margin: 0 5px 15px 0;
+  margin: 0 5px 28px 0;
+}
+@media screen and (min-width: 760px) {
+  .cards_menu .cards_menu--price {
+    margin: 0 5px 15px 0;
+  }
 }
 .cards_menu .cards_menu--check {
   display: flex;
@@ -479,7 +484,7 @@ fieldset {
   transition: margin-right 0.5s linear;
 }
 .cards_menu:hover .cards_menu--price {
-  margin: 0 5px 14px 0;
+  margin: 0 5px 28px 0;
 }
 .cards_menu:hover .cards_menu--icon {
   width: 4rem;
