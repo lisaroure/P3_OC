@@ -495,8 +495,8 @@ fieldset {
 
 .command_btn {
   color: #fff;
-  font-size: 1.2rem;
   background: linear-gradient(#ff79da, #9356DC);
+  font-size: 1.2rem;
   border-radius: 3rem;
   box-shadow: 2px 7px 15px -13px #888888;
   padding: 21px 48px 21px 48px;
