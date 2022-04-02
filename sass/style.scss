@@ -416,7 +416,6 @@ fieldset {
 }
 
 .all_cards-menu {
-    overflow: hidden;
     @include column;
     @include desktop-only {
         flex-direction: row;
@@ -463,49 +462,49 @@ fieldset {
                     display: flex;
                     flex-direction: row;
                     justify-content: flex-end;
-                    margin-top: -87px;
+                    margin: -87px -86px 0 0;
                     overflow: hidden;
-                }
                     .cards_menu--price {
                         font-weight: bold;
-                        transition: transform 400ms linear;
+                        transition: transform 400ms linear both;
                         align-self: flex-end;
                         margin: 0 4px 24px 0;
                         @include desktop-only {
-                            margin: 0 4px 14px 0;
+                            margin:0 95px 15px 0; 
                         }
                     }
                     .cards_menu--icon {
                         @include center;
                         border-radius: 0 1rem 1rem 0;
                         height: 105px;
-                        width: 63px;
-                        margin: 0 -63px 0 6px;
+                        width: 0px;
                         background-color: $colortertiary;
-                        transition: transform 400ms linear;
                         transform-origin: right;  
+                        transition: width  0.5s;
                         @include desktop-only {
                             height: 86px;
-                        }            
-                            i {
+                        }
+                    }
+                         i {
                             font-size: 1.5rem;
                             transition: transform 600ms;
                             color: $white;
-                            }
+                            }    
                     }
-                        &:hover {
-                            box-shadow: 2px 7px 15px -8px #888888; 
+                    &:hover {
+                        .cards_menu--check {
+                            margin: -87px 0 0 0;
+                        }
+                            .cards_menu--price {
+                                margin: 0 5px 14px 0;
+                            }
                                 .cards_menu--icon {
-                                    opacity: 1;
-                                    transform: translateX(-63px);
-                                        i {
+                                    width: 4rem;
+                                }
+                                    i {
                                         transform: rotate(360deg);
-                                        }
-                                }
-                                .cards_menu--price {
-                                    transform: translateX(-63px);   
-                                }
-                        }  
+                                    }
+                    }   
     }
     
 

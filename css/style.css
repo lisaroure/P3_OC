@@ -383,7 +383,6 @@ fieldset {
 }
 
 .all_cards-menu {
-  overflow: hidden;
   display: flex;
   flex-direction: column;
 }
@@ -441,54 +440,52 @@ fieldset {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  margin-top: -87px;
+  margin: -87px -86px 0 0;
   overflow: hidden;
 }
-.cards_menu .cards_menu--price {
+.cards_menu .cards_menu--check .cards_menu--price {
   font-weight: bold;
-  transition: transform 400ms linear;
+  transition: transform 400ms linear both;
   align-self: flex-end;
   margin: 0 4px 24px 0;
 }
 @media screen and (min-width: 760px) {
-  .cards_menu .cards_menu--price {
-    margin: 0 4px 14px 0;
+  .cards_menu .cards_menu--check .cards_menu--price {
+    margin: 0 95px 15px 0;
   }
 }
-.cards_menu .cards_menu--icon {
+.cards_menu .cards_menu--check .cards_menu--icon {
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 0 1rem 1rem 0;
   height: 105px;
-  width: 63px;
-  margin: 0 -63px 0 6px;
+  width: 0px;
   background-color: #99e2d0;
-  transition: transform 400ms linear;
   transform-origin: right;
+  transition: width 0.5s;
 }
 @media screen and (min-width: 760px) {
-  .cards_menu .cards_menu--icon {
+  .cards_menu .cards_menu--check .cards_menu--icon {
     height: 86px;
   }
 }
-.cards_menu .cards_menu--icon i {
+.cards_menu .cards_menu--check i {
   font-size: 1.5rem;
   transition: transform 600ms;
   color: #fff;
 }
-.cards_menu:hover {
-  box-shadow: 2px 7px 15px -8px #888888;
-}
-.cards_menu:hover .cards_menu--icon {
-  opacity: 1;
-  transform: translateX(-63px);
-}
-.cards_menu:hover .cards_menu--icon i {
-  transform: rotate(360deg);
+.cards_menu:hover .cards_menu--check {
+  margin: -87px 0 0 0;
 }
 .cards_menu:hover .cards_menu--price {
-  transform: translateX(-63px);
+  margin: 0 5px 14px 0;
+}
+.cards_menu:hover .cards_menu--icon {
+  width: 4rem;
+}
+.cards_menu:hover i {
+  transform: rotate(360deg);
 }
 
 .command_btn {
