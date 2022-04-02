@@ -389,8 +389,12 @@ fieldset {
 @media screen and (min-width: 760px) {
   .all_cards-menu {
     flex-direction: row;
-    gap: 80px;
+    gap: 45px;
   }
+}
+
+.entrees, .plats, .desserts {
+  gap: 20px;
 }
 
 .menu-type {
@@ -403,26 +407,25 @@ fieldset {
 
 .cards_menu {
   display: flex;
-  flex-direction: column;
   background-color: #fff;
   border-radius: 1rem;
   box-shadow: 2px 7px 15px -13px #888888;
   width: 100%;
   height: 6em;
-  margin: 41px 52px 0 0;
-  padding: 21px 0 0 18px;
+  margin: 0 0 20px 0;
   cursor: pointer;
   overflow: hidden;
 }
 @media screen and (min-width: 760px) {
   .cards_menu {
-    margin: 40px 0 0 0;
     width: 23em;
     height: 86px;
   }
 }
 .cards_menu .cards__description {
   overflow: hidden;
+  padding: 18px 0 0 12px;
+  width: 21em;
 }
 .cards_menu .cards__description h3 {
   margin: 0;
@@ -436,23 +439,20 @@ fieldset {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.cards_menu .cards_menu--price {
+  display: flex;
+  align-items: flex-end;
+  font-weight: bold;
+  margin: 0 5px 15px 0;
+}
 .cards_menu .cards_menu--check {
   display: flex;
-  flex-direction: row;
+  align-items: flex-end;
   justify-content: flex-end;
-  margin: -87px -86px 0 0;
   overflow: hidden;
-}
-.cards_menu .cards_menu--check .cards_menu--price {
-  font-weight: bold;
-  transition: transform 400ms linear both;
-  align-self: flex-end;
-  margin: 0 4px 24px 0;
-}
-@media screen and (min-width: 760px) {
-  .cards_menu .cards_menu--check .cards_menu--price {
-    margin: 0 95px 15px 0;
-  }
+  margin-right: -4em;
+  transition: all 0.5s linear;
+  transform-origin: right;
 }
 .cards_menu .cards_menu--check .cards_menu--icon {
   display: flex;
@@ -463,7 +463,6 @@ fieldset {
   width: 0px;
   background-color: #99e2d0;
   transform-origin: right;
-  transition: width 0.5s;
 }
 @media screen and (min-width: 760px) {
   .cards_menu .cards_menu--check .cards_menu--icon {
@@ -476,7 +475,8 @@ fieldset {
   color: #fff;
 }
 .cards_menu:hover .cards_menu--check {
-  margin: -87px 0 0 0;
+  margin-right: 0;
+  transition: margin-right 0.5s linear;
 }
 .cards_menu:hover .cards_menu--price {
   margin: 0 5px 14px 0;

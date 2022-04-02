@@ -419,8 +419,11 @@ fieldset {
     @include column;
     @include desktop-only {
         flex-direction: row;
-        gap: 80px;
+        gap: 45px;
     }
+}
+.entrees, .plats, .desserts {
+        gap: 20px;
 }
 
 .menu-type {
@@ -432,23 +435,23 @@ fieldset {
 }
 
 .cards_menu {
-    @include column;
+    display: flex;
     background-color: $white;
     border-radius: 1rem;
     @include card-shadow;
     width: 100%;
     height: 6em;
-    margin: 41px 52px 0 0;
-    padding: 21px 0 0 18px;
+    margin: 0 0 20px 0;
     cursor: pointer;
     overflow: hidden;
     @include desktop-only {
-        margin: 40px 0 0 0;
         width: 23em;
         height: 86px;
     } 
         .cards__description {
             overflow: hidden;
+            padding: 18px 0 0 12px;
+            width: 21em;
             h3 {
                 margin: 0;
                 @include ellipsis;
@@ -458,21 +461,20 @@ fieldset {
                     @include ellipsis;
                 }
         }     
+            .cards_menu--price {
+                display: flex;
+                align-items: flex-end;
+                    font-weight: bold;
+                    margin: 0 5px 15px 0;
+            }
                 .cards_menu--check {
                     display: flex;
-                    flex-direction: row;
+                    align-items: flex-end;
                     justify-content: flex-end;
-                    margin: -87px -86px 0 0;
-                    overflow: hidden;
-                    .cards_menu--price {
-                        font-weight: bold;
-                        transition: transform 400ms linear both;
-                        align-self: flex-end;
-                        margin: 0 4px 24px 0;
-                        @include desktop-only {
-                            margin:0 95px 15px 0; 
-                        }
-                    }
+                    overflow: hidden; 
+                    margin-right: -4em;
+                    transition: all 0.5s linear;
+                    transform-origin: right;
                     .cards_menu--icon {
                         @include center;
                         border-radius: 0 1rem 1rem 0;
@@ -480,7 +482,6 @@ fieldset {
                         width: 0px;
                         background-color: $colortertiary;
                         transform-origin: right;  
-                        transition: width  0.5s;
                         @include desktop-only {
                             height: 86px;
                         }
@@ -493,7 +494,8 @@ fieldset {
                     }
                     &:hover {
                         .cards_menu--check {
-                            margin: -87px 0 0 0;
+                            margin-right: 0;
+                            transition: margin-right 0.5s linear;
                         }
                             .cards_menu--price {
                                 margin: 0 5px 14px 0;
