@@ -407,7 +407,6 @@ fieldset {
                 color: $greyblack;
                 position: absolute;
                 right: 5%;
-                transform: translateY(-50%); 
                 cursor: pointer;
             }
             .fas {
@@ -442,6 +441,13 @@ fieldset {
 }
 
 .cards_menu {
+    overflow: hidden;
+    @for $i from 1 through 10 {
+        &:nth-child(#{$i}) {
+            animation-delay: 100ms * $i;
+        }
+    }
+    animation: appear 1s both;
     display: flex;
     background-color: $white;
     border-radius: 1rem;
@@ -450,7 +456,6 @@ fieldset {
     height: 6em;
     margin: 0 0 20px 0;
     cursor: pointer;
-    overflow: hidden;
     @include desktop-only {
         width: 23em;
         height: 86px;
@@ -533,4 +538,16 @@ fieldset {
     margin: 30px;
     border: none;
     cursor: pointer;
+}
+
+/* Keyframes */ 
+
+@keyframes appear {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
