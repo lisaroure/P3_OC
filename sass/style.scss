@@ -10,6 +10,9 @@ $colortertiary: #99e2d0;
 $white: #fff;
 $pinklight: #f5edff;
 $black: #000000;
+$bars: 7;
+$anim-duree: 900ms;
+$anim-delay: calc($anim-duree / $bars);
 
 /*Mixins*/ 
 
@@ -70,9 +73,46 @@ body {
     @include roboto;
 }
 
+/*Loader*/ 
+.loader {
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    height: 100vh;
+    @include center;
+    background-color: $white;
+    opacity: 0.9;
+    gap: 15px;
+    animation: end 1ms 3s forwards;
+      &__bar {
+          height: 4%;
+          width: 2%;
+          border-radius: 6rem;
+          animation: bar $anim-duree backwards infinite;
+          animation-direction: alternate;
+          transform-origin: bottom;
+          @for $i from 1 through $bars {
+              &:nth-child(#{$i}) {
+                  animation-delay: $anim-delay * $i;
+              }
+              &:nth-child(1), &:nth-child(7) {
+                  background-color: $colorsecondary;
+              }
+              &:nth-child(2), &:nth-child(5) {
+                  background-color: $colorprimary;
+              }
+              &:nth-child(3), &:nth-child(6) {
+                  background-color: $colortertiary;
+              }
+          }
+      }
+  
+}
+
+
 /*Header*/ 
 
-#logo {
+.logo {
     display: block;
     margin: auto;
     width: 35%;
@@ -444,10 +484,11 @@ fieldset {
     overflow: hidden;
     @for $i from 1 through 10 {
         &:nth-child(#{$i}) {
-            animation-delay: 100ms * $i;
+            animation-delay: 300ms * $i;
         }
     }
     animation: appear 1s both;
+    transform-origin: top;
     display: flex;
     background-color: $white;
     border-radius: 1rem;
@@ -549,5 +590,21 @@ fieldset {
 
     100% {
         transform: scale(1);
+    }
+}
+
+@keyframes bar {
+    0% {
+        transform: scaleY(0.5);
+    }
+
+    100% {
+        transform: scaleY(1.0);
+    }
+}
+
+@keyframes end {
+    to {
+        transform: scale(0);
     }
 }
