@@ -509,6 +509,9 @@ fieldset {
                         }
                             .cards_menu--price {
                                 margin: 0 5px 28px 0;
+                                @include desktop-only {
+                                    margin: 0 5px 15px 0;
+                                }
                             }
                                 .cards_menu--icon {
                                     width: 4rem;

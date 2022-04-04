@@ -486,6 +486,11 @@ fieldset {
 .cards_menu:hover .cards_menu--price {
   margin: 0 5px 28px 0;
 }
+@media screen and (min-width: 760px) {
+  .cards_menu:hover .cards_menu--price {
+    margin: 0 5px 15px 0;
+  }
+}
 .cards_menu:hover .cards_menu--icon {
   width: 4rem;
 }
