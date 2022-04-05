@@ -1,0 +1,45 @@
+/*Mixins*/ 
+
+@mixin roboto {
+    font-family: 'Roboto', sans-serif;
+}
+@mixin shrikhand {
+    font-family: 'Shrikhand', sans-serif;
+}
+@mixin card-shadow {
+    box-shadow: 2px 7px 15px -13px $darkengray;
+}
+@mixin position-shadow {
+    box-shadow: inset 0px 11px 13px -12px $darkengray;
+}
+@mixin shadow-hover {
+    box-shadow: 2px 7px 15px -8px #888888;
+}
+@mixin column {
+    display: flex;
+    flex-direction: column;
+}
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+@mixin absolute-icons {
+    position: absolute;
+    z-index: 2;
+    right: 5%;
+}
+@mixin desktop-only {
+    @media screen and (min-width: 760px) {
+        @content;
+    }
+}
+@mixin ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;  
+}

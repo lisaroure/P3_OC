@@ -1,0 +1,142 @@
+/*Main*/ /*Présentation des restaurants*/ 
+
+#restaurants {
+    background-color: $mediumgray;
+        h2 {
+            padding: 40px 0 0 30px;
+            @include desktop-only {
+                text-align: center;
+                font-size: 2rem;
+            }
+        }
+}
+
+section {
+    a {
+    text-decoration: none;
+    color: $black;
+    }
+}
+
+.all_cards {
+    @include column;
+    align-items: center;
+    padding-bottom: 75px;
+        @include desktop-only {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            padding: 15px 100px 100px 100px;
+        }
+}
+
+.card_choice {
+    @include column;
+    border-radius: 1rem;
+    width: 93%;
+    height: 269px;
+    background-color: $white;
+    @include card-shadow;
+    position: relative;
+    margin: 48px 0 0 0;
+    &:hover {
+        @include shadow-hover; 
+    }
+    @include desktop-only {
+        width: 34%;
+        height: 22em;
+    }
+        h3 {
+            margin: 4px 0 0 13px;
+            font-size: 1.5rem;
+            @include desktop-only {
+                margin: 16px 0 0 26px;
+            }
+        }
+            img {
+                width: 100%;
+                height: 195px;
+                object-fit: cover;
+                border-radius: 1rem 1rem 0 0;
+                @include desktop-only {
+                    width: 100%;
+                    height: 16em;
+                }
+            }
+             i {
+                font-size: 37px;
+                color: $darkengray;
+                position: absolute;
+                bottom: 5%;
+                left: 90%;
+                transform: translateY(-50%); 
+                cursor: pointer;
+             }
+                .fas {
+                        -webkit-text-fill-color: transparent;
+                        background: -webkit-linear-gradient($colorprimary, $colorsecondary);
+                        transition: opacity 250ms;
+                        opacity: 0; 
+                        -webkit-background-clip: text;
+                                &:hover {                            
+                                opacity: 1; 
+                                } 
+                        }
+                        .new {
+                        background-color: $colortertiary;
+                        color: rgb(0, 143, 79);
+                        @include absolute-icons;
+                        top: 5%;
+                        padding: 0.5rem;
+                        }
+                        .site {
+                            margin: 10px 0 0 13px;
+                            font-size: 1.2rem;
+                            @include desktop-only {
+                                margin: 10px 0 0 25px;
+                            }
+                        }
+        }
+/*Footer*/ 
+
+.footer {
+    background-color: $greyblack;
+    @include desktop-only {
+       @include column;
+        align-items: center;
+    }
+        a {
+            text-decoration: none;
+        }
+}
+
+.logo-footer {
+    @include shrikhand;
+    font-weight: normal;
+    color: $white;
+    padding: 18px 0 3px 30px;
+    margin: 0;
+}
+
+.links {
+    ul {
+        padding: 0 0 22px 18px;
+        margin: 0;
+    }
+        li {
+            list-style-type: none;
+            margin: 8px;
+            @include desktop-only {
+                display: flex;
+                justify-content: center;
+            }
+            a {
+                text-decoration: none;
+                color: $white;
+            }
+        }
+        i {
+            color: $white;
+            margin: 0 8px 0 0;
+        }            
+}
