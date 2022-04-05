@@ -82,15 +82,22 @@ body {
     @include center;
     background-color: $white;
     opacity: 0.9;
-    gap: 15px;
+    gap: 10px;
     animation: end 1ms 3s forwards;
+    @include desktop-only {
+        gap: 15px;
+    }
       &__bar {
-          height: 4%;
-          width: 2%;
+          height: 3%;
+          width: 5%;
           border-radius: 6rem;
           animation: bar $anim-duree backwards infinite;
           animation-direction: alternate;
           transform-origin: bottom;
+          @include desktop-only {
+              height: 4%;
+              width: 2%;
+          }
           @for $i from 1 through $bars {
               &:nth-child(#{$i}) {
                   animation-delay: $anim-delay * $i;
@@ -106,6 +113,9 @@ body {
               }
           }
       }
+        & .logo__loader {
+            width: 13rem;
+        }
   
 }
 

@@ -24,16 +24,27 @@ body {
   align-items: center;
   background-color: #fff;
   opacity: 0.9;
-  gap: 15px;
+  gap: 10px;
   animation: end 1ms 3s forwards;
 }
+@media screen and (min-width: 760px) {
+  .loader {
+    gap: 15px;
+  }
+}
 .loader__bar {
-  height: 4%;
-  width: 2%;
+  height: 3%;
+  width: 5%;
   border-radius: 6rem;
   animation: bar 900ms backwards infinite;
   animation-direction: alternate;
   transform-origin: bottom;
+}
+@media screen and (min-width: 760px) {
+  .loader__bar {
+    height: 4%;
+    width: 2%;
+  }
 }
 .loader__bar:nth-child(1) {
   animation-delay: 128.5714285714ms;
@@ -118,6 +129,9 @@ body {
 }
 .loader__bar:nth-child(3), .loader__bar:nth-child(6) {
   background-color: #99e2d0;
+}
+.loader .logo__loader {
+  width: 13rem;
 }
 
 /*Header*/
