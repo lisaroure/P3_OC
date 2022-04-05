@@ -60,18 +60,6 @@ $anim-delay: calc($anim-duree / $bars);
     text-overflow: ellipsis;  
 }
 
-/* Tout le contenu de la page */ 
-
-*{
-    box-sizing: border-box;
-}
-
-/* Page accueil*/ /*Body*/
-
-body {
-    margin: auto;
-    @include roboto;
-}
 
 /*Loader*/ 
 .loader {

@@ -1,18 +1,6 @@
 @charset "UTF-8";
 /*Variables*/
 /*Mixins*/
-/* Tout le contenu de la page */
-* {
-  box-sizing: border-box;
-}
-
-/* Page accueil*/
-/*Body*/
-body {
-  margin: auto;
-  font-family: "Roboto", sans-serif;
-}
-
 /*Loader*/
 .loader {
   position: fixed;

@@ -1,0 +1,12 @@
+/* Tout le contenu de la page */ 
+
+*{
+    box-sizing: border-box;
+}
+
+/* Page accueil*/ /*Body*/
+
+body {
+    margin: auto;
+    @include roboto;
+}
