@@ -2,7 +2,8 @@
 @import "./utils/variables";
 @import "./pages/accueil";
 @import "./base/fondations";
-@import ".layout/header";
+@import "./layouts/header";
+@import "./utils/keyframes";
 
 
 
@@ -52,38 +53,7 @@
   
 }
 
-/*Pages des menus*/ 
-
-.header-2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: $mediumgray;
-    padding: 20px;
-        i {
-            color: $greyblack;
-            font-size: 2rem;
-        }
-}
-
-.logo-menus {
-    img {
-        display: flex;
-        align-items: center;
-        width: 60%;
-        margin: auto;
-    }
-}
-
-#banniere-menu {
-    img {
-        width: 100%;
-        height: 26em;
-        object-fit: cover;
-    }
-}
-
-/*Section menu*/ 
+/*Pages des menus*/ /*Section menu*/ 
 
 fieldset {
     @include column;
@@ -238,32 +208,4 @@ fieldset {
     margin: 30px;
     border: none;
     cursor: pointer;
-}
-
-/* Keyframes */ 
-
-@keyframes appear {
-    0% {
-        transform: scale(0);
-    }
-
-    100% {
-        transform: scale(1);
-    }
-}
-
-@keyframes bar {
-    0% {
-        transform: scaleY(0.5);
-    }
-
-    100% {
-        transform: scaleY(1.0);
-    }
-}
-
-@keyframes end {
-    to {
-        transform: scale(0);
-    }
 }

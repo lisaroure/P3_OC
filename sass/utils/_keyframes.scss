@@ -1,0 +1,27 @@
+/* Keyframes */ 
+
+@keyframes appear {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes bar {
+    0% {
+        transform: scaleY(0.5);
+    }
+
+    100% {
+        transform: scaleY(1.0);
+    }
+}
+
+@keyframes end {
+    to {
+        transform: scale(0);
+    }
+}

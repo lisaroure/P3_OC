@@ -137,3 +137,35 @@
                 font-size: 16px;
             }
 }
+
+
+/*Pages des menus*/ 
+
+.header-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $mediumgray;
+    padding: 20px;
+        i {
+            color: $greyblack;
+            font-size: 2rem;
+        }
+}
+
+.logo-menus {
+    img {
+        display: flex;
+        align-items: center;
+        width: 60%;
+        margin: auto;
+    }
+}
+
+#banniere-menu {
+    img {
+        width: 100%;
+        height: 26em;
+        object-fit: cover;
+    }
+}
