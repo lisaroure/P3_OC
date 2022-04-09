@@ -551,7 +551,7 @@ fieldset {
 .cards_menu {
   overflow: hidden;
   animation: appear 700ms both;
-  transform-origin: center;
+  transform-origin: bottom;
   display: flex;
   background-color: #fff;
   border-radius: 1rem;
