@@ -114,11 +114,11 @@ fieldset {
     overflow: hidden;
     @for $i from 1 through 10 {
         &:nth-child(#{$i}) {
-            animation-delay: 300ms * $i;
+            animation-delay: 100ms * $i;
         }
     }
-    animation: appear 1s both;
-    transform-origin: top;
+    animation: appear 700ms both;
+    transform-origin: center;
     display: flex;
     background-color: $white;
     border-radius: 1rem;
