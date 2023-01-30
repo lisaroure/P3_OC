@@ -9,7 +9,4 @@
 body {
     margin: auto;
     @include roboto;
-    @include mobile {
-        width: 119%;
-    }
 }
