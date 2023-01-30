@@ -147,6 +147,9 @@
     align-items: center;
     background-color: $mediumgray;
     padding: 20px;
+    @include mobile {
+        width: 122%;
+    }
         i {
             color: $greyblack;
             font-size: 2rem;
